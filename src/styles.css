@@ -19,7 +19,7 @@ section {
 }
 
 .hero-text {
-  background-color: orange;
+/*   background-color: orange; */
 }
 
 .hero-area {
@@ -43,7 +43,7 @@ section {
 }
 
 .socials {
-  background-color: olivedrab;
+/*   background-color: olivedrab; */
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -72,7 +72,7 @@ nav {
 }
 
 ul {
-  background-color: tomato;
+/*   background-color: tomato; */
   display: flex;
   list-style-type: none;
   width: 400px;
