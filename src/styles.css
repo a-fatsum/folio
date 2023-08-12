@@ -136,7 +136,9 @@ nav {
   justify-content: space-between;
   display: flex;
   position: sticky;
+
   top: 0;
+
   background-color: red;
 }
 
@@ -293,6 +295,14 @@ a {
     /* background-color: purple; */
   }
 
+  .frame.frame-hide {
+    visibility: hidden;
+
+    /* transition: all 800ms; */
+    /* transition-delay: 600ms; */
+    transition: visibility 10ms;
+  }
+
   nav {
     /* display: flex; */
     display: flex;
@@ -301,7 +311,7 @@ a {
     flex-direction: column-reverse;
     justify-content: space-around;
     background-color: #222642;
-    background-color: green;
+    /* background-color: green; */
   }
 
   .logo {
