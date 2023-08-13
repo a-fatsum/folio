@@ -13,6 +13,13 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /*  */
+  height: auto;
+}
+
+:root {
+  --background-color: rgba(128, 128, 128, 0.219);
+  --button-color: rgba(10, 71, 71, 0.286);
 }
 
 section {
@@ -42,8 +49,8 @@ section {
   height: 70%;
   width: calc(95vw - 20px);
   /* background-color: transparent; */
-  background-color: rgba(128, 128, 128, 0.219);
-
+  /* background-color: rgba(128, 128, 128, 0.219); */
+  background-color: var(--background-color);
   border-radius: 2%;
   /*  */
   box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.76);
@@ -161,26 +168,17 @@ section {
   margin: 20px;
 }
 
-h1 {
-  font-size: 50px;
-  /* margin: 0; */
-}
-
-/* abdout me h2 */
-h2 {
-  font-size: 50px;
-}
-
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   display: flex;
   position: sticky;
-
   top: 0;
-
   background-color: #171818a5;
+  /* test */
+  /* position: sticky; */
+  position: -webkit-sticky;
 }
 
 ul {
@@ -203,24 +201,7 @@ li {
   font-weight: bold;
 }
 
-/* p {
-  margin: 0;
-  font-size: 30px;
-  font-weight: 300;
-} */
-
-.sub-text {
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.sub-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  /* background-color: tomato; */
-  height: 100vh;
-}
+/*  */
 
 /* Projects section */
 
@@ -230,21 +211,16 @@ li {
   flex-direction: column;
   text-align: center;
   padding: 40px;
-  background-color: rgba(128, 128, 128, 0.219);
-}
-
-.headshot {
-  width: 200px;
-  border-radius: 150px;
-}
-
-.headshot-container {
-  display: flex;
-  align-items: center;
-  height: 100vh;
+  /* background-color: rgba(128, 128, 128, 0.219); */
 }
 
 /*  */
+.sub-text {
+  font-size: 15px;
+  font-weight: 300;
+  /* background-color: tomato; */
+}
+
 .project-card {
   width: 300px;
   height: 500px;
@@ -259,6 +235,106 @@ li {
   background-color: rgba(128, 128, 128, 0.219);
   border-radius: 5px;
 }
+
+/*  */
+/* -------#####---------------- About me */
+
+.sub-section {
+  display: block;
+  text-align: center;
+  padding: 40px;
+  height: 100vh;
+  color: white;
+  background-color: var(--background-color);
+  /* background-color: tomato; */
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.76);
+  /*  */
+  -webkit-transition: visibility 0.3s linear, opacity 0.3s linear;
+  -moz-transition: visibility 0.3s linear, opacity 0.3s linear;
+  -o-transition: visibility 0.3s linear, opacity 0.3s linear;
+  /*  */
+  border-radius: 10px;
+}
+
+.information {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* background-color: olive; */
+  height: fit-content;
+  /* width: 60%; */
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 20%;
+}
+/* abdout me h2 */
+.information h2 {
+  display: block;
+  /* background-color: tomato; */
+  font-size: 40px;
+}
+.information h4 {
+  /* display: block; */
+  position: relative;
+  bottom: 30px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.information h3 {
+  font-weight: 300;
+  font-size: 25px;
+  position: relative;
+  bottom: 35px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5%;
+  /* background-color: red; */
+}
+.about-button {
+  width: 130px;
+  height: 3rem;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  /*  */
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+}
+
+.sub-section p {
+  /* background-color: blue; */
+  line-height: 205%;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* .headshot {
+  width: 200px;
+  border-radius: 150px;
+}
+
+.headshot-container {
+  display: block;
+  position: relative;
+  bottom: 30%;
+  left: 80%;
+  bottom: 90%;
+  align-items: center;
+  width: fit-content;
+  z-index: -1;
+
+} */
+/*  */
+/*  */
 
 @media only screen and (max-width: 1000px) {
   .project-container {
@@ -360,6 +436,10 @@ a {
   }
 
   .logo {
+    display: none;
+  }
+
+  .headshot-container {
     display: none;
   }
 }
