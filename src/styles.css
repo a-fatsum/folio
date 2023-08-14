@@ -96,20 +96,20 @@ section {
   font-size: 25px;
 }
 .hero-text span {
-  color: black;
-  font-weight: 400;
+  /* color: black; */
+  border-bottom: 2px solid black;
   letter-spacing: 3px;
 }
 
 .hero-text span + span {
-  color: yellow;
-  font-weight: 400;
+  /* color: yellow; */
+  border-bottom: 2px solid yellow;
   letter-spacing: 3px;
 }
 
 .hero-text span + span + span {
-  color: red;
-  font-weight: 400;
+  /* color: red; */
+  border-bottom: 2px solid red;
   letter-spacing: 3px;
 }
 
@@ -264,8 +264,8 @@ li {
   /* background-color: olive; */
   height: fit-content;
   /* width: 60%; */
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-bottom: 20%;
 }
 /* abdout me h2 */
@@ -293,11 +293,11 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 5%;
+  column-gap: 1%;
   /* background-color: red; */
 }
 .about-button {
-  width: 130px;
+  width: 10rem;
   height: 3rem;
   background-color: var(--button-color);
   border: none;

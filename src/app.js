@@ -8,3 +8,23 @@ function toggleButton() {
 }
 
 hamburgerButton.addEventListener("click", toggleButton);
+
+//
+//
+//
+window.onload = function () {
+  console.log("Holax");
+};
+//
+
+var scrollTop =
+  window.pageYOffset !== undefined
+    ? window.pageYOffset
+    : (document.documentElement || document.body.parentNode || document.body)
+        .scrollTop;
+//
+var scrollLeft =
+  window.pageXOffset !== undefined
+    ? window.pageXOffset
+    : (document.documentElement || document.body.parentNode || document.body)
+        .scrollLeft;
