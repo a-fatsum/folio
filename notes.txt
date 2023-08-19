@@ -7,3 +7,8 @@ https://www.youtube.com/watch?v=-D6oTPA4vXc
 
 ###############
 https://stackoverflow.com/questions/74499667/how-to-load-content-on-scrolling-in-website-with-javascript
+
+https://stackoverflow.com/questions/876115/how-can-i-determine-if-a-div-is-scrolled-to-the-bottom
+
+
+https://stackoverflow.com/questions/876115/how-can-i-determine-if-a-div-is-scrolled-to-the-bottom

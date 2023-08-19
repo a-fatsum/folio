@@ -10,21 +10,22 @@ function toggleButton() {
 hamburgerButton.addEventListener("click", toggleButton);
 
 //
-//
-//
-window.onload = function () {
-  console.log("Holax");
-};
+const subSection = document.querySelector(".sub-section");
 //
 
-var scrollTop =
-  window.pageYOffset !== undefined
-    ? window.pageYOffset
-    : (document.documentElement || document.body.parentNode || document.body)
-        .scrollTop;
-//
-var scrollLeft =
-  window.pageXOffset !== undefined
-    ? window.pageXOffset
-    : (document.documentElement || document.body.parentNode || document.body)
-        .scrollLeft;
+subSection.addEventListener("mouseover", () => {
+  subSection.style.background = "grey"; // remove later
+  //
+  const education = document.getElementById("education");
+  education.classList.toggle("education-show");
+  education.classList.remove("about-button");
+});
+// --- //
+
+subSection.addEventListener("mouseout", () => {
+  subSection.style.background = "tomato"; // remove later
+  //
+  const education = document.getElementById("education");
+  education.classList.toggle("education-show");
+  education.classList.remove("about-button");
+});
