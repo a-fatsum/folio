@@ -9,23 +9,25 @@ function toggleButton() {
 
 hamburgerButton.addEventListener("click", toggleButton);
 
-//
+// subsection
 const subSection = document.querySelector(".sub-section");
 //
-
-subSection.addEventListener("mouseover", () => {
-  subSection.style.background = "grey"; // remove later
-  //
+// Education
+const education = document.getElementById("education");
+//
+// skills
+const skills = document.getElementById("skills");
+//
+const infoDisplay = function () {
   const education = document.getElementById("education");
   education.classList.toggle("education-show");
-  education.classList.remove("about-button");
-});
-// --- //
-
-subSection.addEventListener("mouseout", () => {
-  subSection.style.background = "tomato"; // remove later
+  education.classList.toggle("about-button");
   //
-  const education = document.getElementById("education");
-  education.classList.toggle("education-show");
-  education.classList.remove("about-button");
-});
+  const skills = document.getElementById("skills");
+  skills.classList.toggle("skills-show");
+  skills.classList.toggle("about-button");
+};
+
+subSection.addEventListener("mouseover", infoDisplay);
+// //
+subSection.addEventListener("mouseout", infoDisplay);

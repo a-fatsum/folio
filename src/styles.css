@@ -262,26 +262,10 @@ li {
   /* background-color: tomato; */
 }
 
-.education-show {
-  display: block;
-  position: absolute;
-  left: 20%;
-  width: 10rem;
-  height: 3rem;
-  background-color: var(--button-color);
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  /*  */
-  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
-  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
-  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
-}
-
 .information {
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: block;
+  position: relative;
+  top: 10%;
   /* background-color: olive; */
   height: fit-content;
   /* width: 60%; */
@@ -289,26 +273,36 @@ li {
   padding-right: 15%;
   padding-bottom: 20%;
 }
+
 /* abdout me h2 */
 .information h2 {
   display: block;
   /* background-color: tomato; */
-  font-size: 40px;
+  font-size: 4rem;
+  font-weight: lighter;
 }
 .information h4 {
   /* display: block; */
   position: relative;
   bottom: 30px;
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .information h3 {
   font-weight: 300;
-  font-size: 25px;
+  font-size: 2rem;
   position: relative;
   bottom: 35px;
 }
+
+.sub-section p {
+  /* background-color: blue; */
+  line-height: 205%;
+  font-weight: 300;
+  font-size: 20px;
+}
+/*  */
 
 .buttons-container {
   display: flex;
@@ -317,7 +311,26 @@ li {
   column-gap: 1%;
   /* background-color: red; */
 }
-.about-button {
+
+.grid-wrapper {
+  background-color: tomato;
+  display: grid;
+  grid-template-columns: repeat(4, 20px);
+  grid-auto-rows: 100px;
+  grid-gap: 20px;
+  grid-template-areas: "header ";
+}
+.x {
+  grid-area: header;
+}
+
+.education-show {
+  display: block;
+  position: absolute;
+  /* left: 20%; */
+  margin-left: 50%;
+  transition: all 0.5s ease;
+  /*  */
   width: 10rem;
   height: 3rem;
   background-color: var(--button-color);
@@ -329,13 +342,72 @@ li {
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+  /*  */
+  text-align: center;
+}
+.education-show::after {
+  content: "My education";
+  display: block;
+  position: absolute;
+  /* left: 50%;
+  bottom: 50%; */
+  text-align: center;
+  padding-left: 25%;
+  bottom: 30%;
+}
+.skills-show::after {
+  content: "My skills";
+  display: block;
+  position: absolute;
+  /* left: 50%;
+  bottom: 50%; */
+  text-align: center;
+  padding-left: 30%;
+  bottom: 30%;
 }
 
-.sub-section p {
-  /* background-color: blue; */
-  line-height: 205%;
-  font-weight: 300;
-  font-size: 20px;
+.skills-show {
+  display: block;
+  position: absolute;
+  /* right: 20%; */
+  margin-right: 50%;
+  transition: all 0.5s ease;
+  /*  */
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  /*  */
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+  /*  */
+  text-align: center;
+}
+
+.about-button {
+  display: block;
+  position: absolute;
+  /* margin: 0%; */
+  width: 20rem;
+  height: 3rem;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  /*  */
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.47);
+}
+.about-button::after {
+  content: "SKILLS & EDUCATION";
+  letter-spacing: 5px;
 }
 
 /* .headshot {
