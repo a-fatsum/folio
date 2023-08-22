@@ -21,6 +21,7 @@ nav {
   top: 0;
   background-color: #1d3131a5;
   position: -webkit-sticky;
+  z-index: 1;
 }
 
 ul {
@@ -41,6 +42,7 @@ li {
 }
 
 /* ---------------------------------------------- */
+/* Hero */
 /* ---------------------------------------------- */
 
 .hero {
@@ -59,7 +61,7 @@ li {
 } */
 
 .frame {
-  /* background-color: blue; */
+  background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -139,28 +141,29 @@ li {
   column-gap: 3%;
 }
 /* ---------------------------------------------- */
+/*  Projects   */
 /* ---------------------------------------------- */
 
 .sub-section-alternative {
-  /* background-color: tomato; */
-  background: #232729;
+  background-color: tomato;
+  /* background: #232729; */
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
   align-items: center;
   justify-content: center;
 }
+
 .sub-section-alternative h2 {
-  /* background-color: crimson; */
-  font-size: 3em;
-  font-weight: 300;
+  background-color: crimson;
+  font-size: 2.5em;
+  font-weight: 200;
 }
 
 .projects-container {
-  /* background-color: darkgreen; */
-
+  background-color: darkgreen;
   display: grid;
   grid-template-columns: 550px auto;
   grid-row-gap: 50px;
@@ -176,9 +179,8 @@ li {
   }
 }
 .project-card {
-  /* background-color: dodgerblue; */
-  background: #111a276c;
-
+  background-color: dodgerblue;
+  /* background: #181b1c; */
   margin: 1em;
   display: flex;
   flex-direction: column;
@@ -186,8 +188,124 @@ li {
   width: 499px;
   height: 450px;
   border-radius: 1.5em;
-  justify-content: center;
+  justify-content: flex-end;
   align-content: center;
   justify-items: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------- */
+/* About me */
+/* ---------------------------------------------- */
+
+.sub-section {
+  /* background-color: tomato; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.information {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* row-gap: 5em; */
+  height: 100%;
+}
+
+.information h2 {
+  /* background-color: green; */
+  font-size: 2.5em;
+  font-weight: 200;
+  margin: 0;
+}
+
+.information h4 {
+  /* background-color: darkred; */
+  margin: 0;
+}
+
+.information h3 {
+  /* background-color: lightsteelblue; */
+  margin: 0;
+}
+
+.wrapper {
+  /* background-color: springgreen; */
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-container {
+  /* background-color: darkorchid; */
+}
+/* containes skills and education */
+.container {
+  /* background-color: maroon; */
+  display: flex;
+  flex-direction: row;
+  width: 1080px;
+  border-radius: 1em;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+/* Skills */
+#skills-wrapper {
+  /* background-color: gold; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.item-header {
+  /* background-color: darkorange; */
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.item {
+  /* background-color: red; */
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+/* Education */
+#education-wrapper {
+  /* background-color: pink; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr auto;
+  row-gap: 2em;
+}
+.education-header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.education-item {
+  /* background-color: yellowgreen; */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-content: center;
   align-items: center;
 }
