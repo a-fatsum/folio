@@ -2,26 +2,27 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   background: #181b1c;
-  color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 400vh;
+  color: white;
+  height: 100%;
 }
 :root {
-  --background-color: rgba(128, 128, 128, 0.219);
-  --button-color: rgba(10, 71, 71, 0.286);
+  /* --background-color: rgba(128, 128, 128, 0.219); */
+  /* --button-color: rgba(10, 71, 71, 0.286); */
 }
 nav {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  display: flex;
-  position: sticky;
-  top: 0;
   background-color: #1d3131a5;
-  position: -webkit-sticky;
-  z-index: 1;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  z-index: 20;
 }
 
 ul {
@@ -40,14 +41,24 @@ li {
   font-size: 25px;
   font-weight: bold;
 }
-
+/* main container */
+#main-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  will-change: transform;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
 /* ---------------------------------------------- */
 /* Hero */
 /* ---------------------------------------------- */
 
 .hero {
   /* background-color: tomato; */
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +72,7 @@ li {
 } */
 
 .frame {
-  background-color: blue;
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -70,7 +81,6 @@ li {
   align-content: center;
   height: 100%;
   row-gap: 30%;
-  padding-bottom: 1%;
 }
 
 .hero-text {
@@ -81,7 +91,7 @@ li {
   align-content: center;
   text-align: center;
   align-content: center;
-  height: 50%;
+  height: 100%;
   row-gap: 5%;
 }
 
@@ -139,36 +149,46 @@ li {
   text-align: center;
   align-content: center;
   column-gap: 3%;
+  margin-bottom: 3em;
 }
 /* ---------------------------------------------- */
 /*  Projects   */
 /* ---------------------------------------------- */
 
 .sub-section-alternative {
-  background-color: tomato;
-  /* background: #232729; */
-  height: 100vh;
+  /* background-color: tomato; */
+  background: #232729;
+  height: 100%;
+  text-align: center;
+  /* padding-top: 7em; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-content: center;
   align-items: center;
   justify-content: center;
+  /* padding-bottom: 2.5em; */
 }
 
 .sub-section-alternative h2 {
-  background-color: crimson;
+  /* background-color: crimson; */
+  display: block;
+  position: relative;
   font-size: 2.5em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .projects-container {
-  background-color: darkgreen;
+  /* background-color: darkgreen; */
   display: grid;
-  grid-template-columns: 550px auto;
-  grid-row-gap: 50px;
+  grid-template-columns: auto auto;
+  grid-row-gap: 10px;
   border-radius: 1em;
   justify-content: center;
+  height: auto;
+  width: auto;
+  margin-top: 3em;
+  overflow: auto;
 }
 @media (max-width: 1080px) {
   .projects-container {
@@ -179,8 +199,8 @@ li {
   }
 }
 .project-card {
-  background-color: dodgerblue;
-  /* background: #181b1c; */
+  /* background-color: dodgerblue; */
+  background: #181b1c;
   margin: 1em;
   display: flex;
   flex-direction: column;
@@ -188,7 +208,7 @@ li {
   width: 499px;
   height: 450px;
   border-radius: 1.5em;
-  justify-content: flex-end;
+  justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
@@ -199,74 +219,91 @@ li {
 /* ---------------------------------------------- */
 
 .sub-section {
-  /* background-color: tomato; */
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-}
+  background-color: tomato;
+  background: #181b1c;
 
-.information {
-  /* background-color: yellow; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  /* row-gap: 5em; */
   height: 100%;
+  width: 100%;
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr auto;
+  justify-items: center;
+
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* justify-items: center; */
+  /* align-items: center; */
 }
 
-.information h2 {
+.sub-section h2 {
   /* background-color: green; */
   font-size: 2.5em;
-  font-weight: 200;
-  margin: 0;
+  font-weight: 300;
+  margin-top: 4em;
+  /* margin-bottom: 2em; */
+  /* margin: 0; */
 }
 
-.information h4 {
+.sub-section h4 {
   /* background-color: darkred; */
-  margin: 0;
+  margin-top: 0;
+  font-size: 1.5em;
+  font-weight: 200;
+  /* margin: 0; */
 }
 
-.information h3 {
+.sub-section h3 {
   /* background-color: lightsteelblue; */
-  margin: 0;
-}
+  margin-top: 0;
 
-.wrapper {
-  /* background-color: springgreen; */
-  display: flex;
-  flex-direction: column;
+  font-size: 2em;
+  font-weight: 300;
+  /* margin: 0; */
 }
 
 .buttons-container {
   /* background-color: darkorchid; */
 }
+
+/* .information { */
+/* background-color: yellow; */
+/* display: flex; */
+/* flex-direction: column; */
+/* justify-content: center; */
+/* align-items: center; */
+/* align-content: center; */
+/* row-gap: 5em; */
+/* height: auto; */
+/* position: relative; */
+/* padding-top: 10em; */
+/* } */
 /* containes skills and education */
 .container {
   /* background-color: maroon; */
   display: flex;
   flex-direction: row;
+  text-align: center;
   width: 1080px;
   border-radius: 1em;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 2.1em;
+  padding-right: 2.1em;
+  margin-bottom: 5em;
 }
 /* Skills */
 #skills-wrapper {
-  /* background-color: gold; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr auto;
+  background-color: gold;
+  background: #232729;
 
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  height: 100%;
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
   padding: 1em;
   border-radius: 1em;
   text-align: center;
@@ -274,38 +311,86 @@ li {
 }
 
 .item-header {
-  /* background-color: darkorange; */
+  background-color: darkorange;
+  background: #181b1c;
+
   grid-column-start: 1;
   grid-column-end: -1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 10em;
+  font-size: 18px;
+  border-radius: 0.2em;
 }
 .item {
-  /* background-color: red; */
-  height: 100px;
-  width: 100px;
+  background-color: red;
+  background: #181b1c;
+
+  height: 95px;
+  width: 95px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-around;
   align-content: center;
   align-items: center;
+  border-radius: 0.6em;
+  font-size: 16px;
+}
+.item i {
+  font-size: 3em;
 }
 /* Education */
 #education-wrapper {
-  /* background-color: pink; */
+  background-color: pink;
+  background: #232729;
+
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr auto;
-  row-gap: 2em;
+  grid-template-rows: 2em 5em 5em 2em 5em 5em;
+
+  row-gap: 5em;
+  width: 31.5em;
+  border-radius: 1em;
+  height: 100%;
+  padding: 1em;
 }
 .education-header {
+  background-color: teal;
+  background: #181b1c;
+
   display: flex;
   justify-content: space-around;
   align-content: center;
   align-items: center;
+  width: 10em;
+  font-size: 18px;
+  border-radius: 0.2em;
 }
 .education-item {
-  /* background-color: yellowgreen; */
+  background-color: yellowgreen;
+  background: #181b1c;
+
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
+  row-gap: 0.2em;
+  font-size: 16px;
+  padding: 0.5em;
+  border-radius: 0.6em;
+}
+.education-item i {
+  font-size: 3em;
+}
+/* ---------------------------------------------- */
+/* Footer */
+/* ---------------------------------------------- */
+
+footer {
+  background-color: slateblue;
+  height: 100%;
+  width: 100%;
 }
