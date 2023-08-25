@@ -23,7 +23,7 @@ nav {
   align-items: center;
   flex-direction: row;
   z-index: 20;
-  height: 40px;
+  height: 30px;
 }
 nav img {
   width: 100px;
@@ -227,17 +227,18 @@ row-gap: 30%;
 
 .sub-section h4 {
   background-color: darkred;
-  /* margin-top: 0; */
-  /* font-size: 1.5em; */
-  /* font-weight: 200; */
+  margin-top: -1.5em;
+  /* display: inline-block; */
+  font-size: 1.1em;
+  font-weight: 300;
   /* margin: 0; */
 }
 
 .sub-section h3 {
   background-color: lightsteelblue;
-  /* margin-top: 0; */
-  /* font-size: 2em; */
-  /* font-weight: 300; */
+  margin-top: -0.5em;
+  font-size: 2em;
+  font-weight: 300;
   /* margin: 0; */
 }
 
@@ -262,10 +263,10 @@ row-gap: 30%;
 /* Skills */
 #skills-wrapper {
   background-color: gold;
-  width: 50%;
+  width: 45%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 0.3em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 0.5em;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -290,8 +291,8 @@ row-gap: 30%;
 .item {
   background-color: red;
   /* background: #181b1c; */
-  height: 50px;
-  width: 140px;
+  height: 40px;
+  width: 120px;
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
@@ -304,23 +305,23 @@ row-gap: 30%;
   /* align-self: center; */
 }
 .item i {
-  font-size: 2em;
+  font-size: 1.2em;
 }
 /* Education */
 #education-wrapper {
   background-color: pink;
-  width: 50%;
+  width: calc(45% - 3em);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  row-gap: 2em;
+  align-items: flex-start;
+  row-gap: 1em;
   border-radius: 1em;
+  padding-left: 3em;
 }
 .education-header {
   background-color: teal;
   /* background: #181b1c; */
-
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -329,11 +330,17 @@ row-gap: 30%;
   font-size: 18px;
   border-radius: 0.2em;
 }
+.education-header-1 {
+  /* margin-top: -3em; */
+}
+.education-header-2 {
+  margin-top: 3.2em;
+}
 .education-item {
   background-color: yellowgreen;
   /* background: #181b1c; */
   font-size: 16px;
-  width: 70%;
+  /* width: 70%; */
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row-reverse;
