@@ -23,8 +23,12 @@ nav {
   align-items: center;
   flex-direction: row;
   z-index: 20;
+  height: 40px;
 }
-
+nav img {
+  width: 100px;
+  height: 10px;
+}
 ul {
   display: flex;
   flex-direction: row;
@@ -32,13 +36,13 @@ ul {
   list-style-type: none;
   width: fit-content;
   justify-content: space-around;
-  font-size: 25px;
+  font-size: 18px;
   margin-right: 5%;
 }
 
 li {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
 }
 /* main container */
@@ -146,7 +150,7 @@ row-gap: 30%;
 /* ---------------------------------------------- */
 
 .sub-section-alternative {
-  background-color: tomato;
+  /* background-color: tomato; */
   /* background: #232729; */
   height: calc(100% - 14em);
   text-align: center;
@@ -206,28 +210,19 @@ row-gap: 30%;
 .sub-section {
   background-color: tomato;
   /* background: #181b1c; */
-  height: 100%;
-  /* width: 100%; */
+  height: calc(100% - 4em);
+  /* height: 100%; */
   text-align: center;
-
-  /* display: grid; */
-  /* grid-template-rows: 1fr 1fr 1fr 1fr auto; */
-  /* justify-items: center; */
-
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-content: center; */
-  /* justify-items: center; */
-  /* align-items: center; */
+  display: block;
+  padding-top: 4em;
 }
 
 .sub-section h2 {
   background-color: green;
-  /* font-size: 2.5em; */
-  /* font-weight: 300; */
+  /* display: inline-block; */
   /* margin-top: 4em; */
-  /* margin-bottom: 2em; */
-  /* margin: 0; */
+  font-size: 2.5em;
+  font-weight: 300;
 }
 
 .sub-section h4 {
@@ -241,7 +236,6 @@ row-gap: 30%;
 .sub-section h3 {
   background-color: lightsteelblue;
   /* margin-top: 0; */
-
   /* font-size: 2em; */
   /* font-weight: 300; */
   /* margin: 0; */
@@ -253,6 +247,7 @@ row-gap: 30%;
 
 /* containes skills and education */
 .container {
+  /* margin-top: 5em; */
   background-color: maroon;
   height: auto;
   display: flex;
@@ -275,6 +270,7 @@ row-gap: 30%;
   align-content: center;
   justify-items: center;
   align-items: stretch;
+  border-radius: 1em;
 }
 
 .item-header {
@@ -319,6 +315,7 @@ row-gap: 30%;
   justify-content: center;
   align-items: center;
   row-gap: 2em;
+  border-radius: 1em;
 }
 .education-header {
   background-color: teal;
@@ -340,10 +337,10 @@ row-gap: 30%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-content: center;
   align-items: center;
-  /* column-gap: 1em; */
+  column-gap: 2em;
   padding: 0.5em;
   border-radius: 0.6em;
 }
@@ -355,7 +352,7 @@ row-gap: 30%;
 /* ---------------------------------------------- */
 
 footer {
-  /* background-color: slateblue; */
-  /* height: 100%; */
-  /* width: 100%; */
+  background-color: slateblue;
+  height: 100%;
+  width: 100%;
 }
