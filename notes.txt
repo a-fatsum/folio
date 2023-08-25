@@ -16,6 +16,24 @@ https://stackoverflow.com/questions/876115/how-can-i-determine-if-a-div-is-scrol
 
 https://www.youtube.com/watch?v=68O6eOGAGqA
 
+//////////////////////////////////////////////////////////////////////////////////
+https://www.reddit.com/r/webdev/comments/lnqdw9/struggling_to_develop_a_responsive_website/
+//////////////////////////////////////////////////////////////////////////////////
 
+Learn flexbox. Use <section> Tags for each unique section of your site, inside that have a container class div. I always put individual containers on each section in case they need more space than the site container.
 
-https://www.youtube.com/watch?v=-pcMxrugSbs
+Each container should be set to width 100%, max-width (however big you want it. On mobile start with like 400px), margin auto, padding: 0 10px. That set up is how you make things responsive. You set it to grow to a certain point (max-width) and it will not get any bigger and margin auto centers it. The padding of the container creates space on the left and right for the elements to bump up against so the content isn’t touching the edges of the screen. That’s bad.
+
+When you get to a new breakpoint you change the max width to be bigger so it’s contents can spread out more and more each new breakpoint.
+
+Set the child elements to be width:100% max width 300px (or however big they’re supposed to be on tablet and /or desktop as their final width) and margin auto.
+
+Flexbox will determine how the containers child elements will behave. On the container (or parent element), set it up with display:flex and on mobile flex-direction:column so that everything aligns in a column. Justify-content:center centers the items along the x axis much like how Margin auto works on the container.
+
+When the screen gets big enough you change flex-direction to row and the items will line up in a row to fill the space that the containers new and bigger max-width allows for. Set justify-content to “space-between” and the children will have equal space BETWEEN them, with the ones on the outside touching the containers edge. The space between them can be adjusted by adjusting the containers max width. A bigger max width means more space between them. A small one will decrease the space between them. The times are FLEXIBLE, hence flexbox.
+
+This is in my opinion the basic blocks of responsive design. You code your mobile in such a way that it’s elements grow into the bigger spaces, rather than starting at desktop and trying to squeeze them into smaller ones. It’s easier to grow than it is to shrink.
+
+You can use percentages too. Like if you have 3 cards that are supposed to be in a row on tablet, set the items to be width:30% and set the max width for it to stop at, for example 350px. So on tablet they would be equal sizes of 30% of its container, and flex box created the space between them. So while the container width grows up to its max width, the elements grow at the same ratio until their max widths are met. That’s True responsive design. When elements are all growing to fit their containers at whatever screen size then a breakpoint hits and they adjust their positions and grow into those new containers.
+
+Hopefully this helps understand how to do it better.
