@@ -244,6 +244,21 @@ row-gap: 30%;
 
 .buttons-container {
   background-color: darkorchid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  height: auto;
+  margin-bottom: 1em;
+}
+.about-button {
+  background-color: blue;
+  width: 10em;
+  height: 2em;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
 }
 
 /* containes skills and education */
@@ -279,6 +294,7 @@ row-gap: 30%;
   /* background: #181b1c; */
   grid-column-start: 1;
   grid-column-end: -1;
+  /* justify-self: start; */
   display: flex;
   justify-content: center;
   align-content: center;
@@ -318,6 +334,7 @@ row-gap: 30%;
   row-gap: 1em;
   border-radius: 1em;
   padding-left: 3em;
+  /* padding: 3em; */
 }
 .education-header {
   background-color: teal;
