@@ -20,7 +20,9 @@ https://www.youtube.com/watch?v=68O6eOGAGqA
 https://www.reddit.com/r/webdev/comments/lnqdw9/struggling_to_develop_a_responsive_website/
 //////////////////////////////////////////////////////////////////////////////////
 
-Learn flexbox. Use <section> Tags for each unique section of your site, inside that have a container class div. I always put individual containers on each section in case they need more space than the site container.
+Learn flexbox. Use <section> Tags for each unique section of your site, inside that have a container class div. 
+
+I always put individual containers on each section in case they need more space than the site container.
 
 Each container should be set to width 100%, max-width (however big you want it. On mobile start with like 400px), margin auto, padding: 0 10px. That set up is how you make things responsive. You set it to grow to a certain point (max-width) and it will not get any bigger and margin auto centers it. The padding of the container creates space on the left and right for the elements to bump up against so the content isn’t touching the edges of the screen. That’s bad.
 

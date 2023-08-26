@@ -60,22 +60,29 @@ li {
 /* ---------------------------------------------- */
 
 .hero {
-  background-color: tomato;
+  /* background-color: tomato; */
   height: 100%;
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* text-align: center; */
+  /* text-align: center; */
+  /* overflow: auto; */
+}
+.hero-area,
+.projects-area,
+.about-me-area {
+  background-color: green;
+  width: 100%;
+  margin: auto;
+  padding: 0px 10px;
+  /*  */
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  text-align: center;
-  text-align: center;
-  overflow: auto;
 }
-/* .hero-area {
-  background-color: green;
-  display: flex;
-  flex-direction: column;
-} */
 
 /* .frame {
 background-color: blue;
@@ -98,12 +105,14 @@ row-gap: 30%;
   text-align: center;
 } */
 
-#name {
+#name,
+.hero-text p,
+#location,
+.button,
+.socials {
   /* background-color: orange; */
-  text-align: center;
-  font-size: 3em;
-  font-weight: 200;
-  margin-top: 5em;
+  width: 100%;
+  margin: auto;
 }
 .hero-text p {
   /* background-color: brown; */
