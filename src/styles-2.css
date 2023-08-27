@@ -159,23 +159,6 @@ row-gap: 30%;
   margin-top: 5em;
 }
 
-@media (max-width: 400px) {
-  .hero-area {
-    background-color: lightblue;
-    max-width: 300px;
-  }
-  #name {
-    margin-top: 3em;
-  }
-  .hero-area p {
-    margin-top: 1em;
-  }
-  #location {
-  }
-  .button {
-    margin-top: 5em;
-  }
-}
 /* ---------------------------------------------- */
 /*  Projects   */
 /* ---------------------------------------------- */
@@ -213,15 +196,6 @@ row-gap: 30%;
   /* set margin auto to center div inside section */
   border-radius: 1em;
   margin-top: 7em;
-}
-
-@media (max-width: 1200px) {
-  .projects-container {
-    flex-wrap: wrap;
-  }
-  .sub-section-alternative {
-    height: fit-content;
-  }
 }
 
 .project-card {
@@ -413,6 +387,56 @@ row-gap: 30%;
   font-size: 2em;
 }
 
+/* ---------------------------------------------- */
+/* Footer */
+/* ---------------------------------------------- */
+
+footer {
+  background-color: slateblue;
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* Media queries */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+@media (max-width: 400px) {
+  .hero-area {
+    background-color: lightblue;
+    max-width: 300px;
+  }
+  #name {
+    margin-top: 3em;
+  }
+  .hero-area p {
+    margin-top: 1em;
+  }
+  #location {
+  }
+  .button {
+    margin-top: 10em;
+  }
+  .socials {
+    margin-top: 8em;
+  }
+}
+
+/* ---------------------------------------------- */
+
+@media (max-width: 1200px) {
+  .projects-container {
+    flex-wrap: wrap;
+  }
+  .sub-section-alternative {
+    height: fit-content;
+  }
+}
+
+/* ---------------------------------------------- */
+
 @media (max-width: 1200px) {
   #skills-wrapper {
     flex-wrap: wrap;
@@ -428,14 +452,4 @@ row-gap: 30%;
     flex-wrap: wrap;
     flex-direction: column;
   }
-}
-
-/* ---------------------------------------------- */
-/* Footer */
-/* ---------------------------------------------- */
-
-footer {
-  background-color: slateblue;
-  height: 100%;
-  width: 100%;
 }
