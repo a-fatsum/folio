@@ -103,7 +103,15 @@ li {
   font-size: 1.5em;
   font-weight: 200;
 }
-
+#location span {
+  border-bottom: 1px solid black;
+}
+#location span + span {
+  border-bottom: 1px solid yellow;
+}
+#location span + span + span {
+  border-bottom: 1px solid red;
+}
 .button {
   display: flex;
   flex-direction: column;
@@ -210,6 +218,7 @@ li {
 
 .sub-section h4 {
   /* background-color: darkred; */
+  color: rgba(255, 127, 80, 0.499);
   margin-top: -1.5em;
   font-size: 1.1em;
   font-weight: 300;
@@ -217,8 +226,8 @@ li {
 
 /* containes skills and education */
 .container {
-  margin-top: 2em;
   /* background-color: maroon; */
+  margin-top: 2em;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -227,14 +236,18 @@ li {
   align-content: center;
   /* column-gap: 3em; */
   width: 100%;
+  margin: auto;
 }
 
 /* Skills */
 #skills-wrapper {
   /* background-color: gold; */
-  width: 50%;
+  /* width: 50%; */
+  width: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: auto auto auto auto;
+
   grid-row-gap: 0.5em;
   grid-column-gap: 0.5em;
   justify-content: center;
@@ -242,12 +255,14 @@ li {
   justify-items: center;
   /* align-items: stretch; */
   border-radius: 1em;
-  /* margin: auto; */
+  margin: auto;
 }
 
 .item-header {
   /* background-color: darkorange; */
-  background: #181b1c;
+  background-color: rgb(10, 20, 42);
+  color: rgba(246, 255, 80, 0.355);
+
   grid-column-start: 1;
   grid-column-end: -1;
   display: flex;
@@ -257,6 +272,7 @@ li {
   align-items: center;
   width: 10em;
   font-size: 18px;
+  font-weight: 200;
   border-radius: 0.2em;
 }
 .item {
@@ -280,29 +296,33 @@ li {
 /* Education */
 #education-wrapper {
   /* background-color: pink; */
-  width: 30%;
+  /* width: 30%; */
+  width: auto;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  row-gap: 1em;
+  row-gap: 1.3em;
   border-radius: 1em;
   padding-left: 3em;
-  padding: 3em;
+  /* padding: 3em; */
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
+  margin: auto;
 }
 .education-header {
   /* background-color: teal; */
-  background: #181b1c;
+  background-color: rgb(10, 20, 42);
+  color: rgba(246, 255, 80, 0.355);
   display: flex;
   justify-content: space-around;
   align-content: center;
   align-items: center;
   width: 10em;
   font-size: 18px;
+  font-weight: 200;
   border-radius: 0.2em;
 }
 .education-header-1 {
@@ -338,12 +358,6 @@ footer {
   background-color: slateblue;
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
 }
 
 /* ---------------------------------------------- */
@@ -401,6 +415,9 @@ footer {
   .about-me-area h4 {
     font-size: 1em;
   }
+  .sub-section {
+    height: fit-content;
+  }
   .container {
     flex-wrap: wrap;
     flex-direction: column;
@@ -408,14 +425,14 @@ footer {
   }
 
   #skills-wrapper {
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: auto auto;
     width: 100%;
     margin: auto;
     /* grid-row-gap: 1em; */
   }
   .item-header {
     /* grid-area: item-header; */
-    background-color: aquamarine;
   }
   .item {
     /* grid-area: item; */
@@ -424,9 +441,8 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    background-color: red;
+    /* background-color: red; */
     padding: 3em;
-    /* height: 100vh; */
     row-gap: 1em;
   }
 
