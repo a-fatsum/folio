@@ -23,7 +23,7 @@ nav {
   align-items: center;
   flex-direction: row;
   z-index: 20;
-  height: 30px;
+  height: 1.5em;
 }
 nav img {
   width: 100px;
@@ -217,13 +217,6 @@ row-gap: 30%;
 /* ---------------------------------------------- */
 
 .sub-section {
-  /* background-color: tomato; */
-  /* background: #181b1c; */
-  /* height: calc(100% - 4em); */
-  /* height: 100%; */
-  /* text-align: center; */
-  /* display: block; */
-  /* padding-top: 4em; */
 }
 
 .about-me-area {
@@ -246,32 +239,6 @@ row-gap: 30%;
   /* margin: 0; */
 }
 
-/* .sub-section h3 {
-  background-color: lightsteelblue;
-  margin-top: -0.5em;
-  font-size: 2em;
-  font-weight: 300;
-} */
-
-/* .buttons-container {
-  background-color: darkorchid;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: center;
-  height: auto;
-  margin-bottom: 1em;
-} */
-/* .about-button {
-  background-color: blue;
-  width: 10em;
-  height: 2em;
-  border: none;
-  outline: none;
-  border-radius: 0.5em;
-} */
-
 /* containes skills and education */
 .container {
   /* margin-top: 5em; */
@@ -290,7 +257,7 @@ row-gap: 30%;
 /* Skills */
 #skills-wrapper {
   background-color: gold;
-  width: 35em;
+  width: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 0.5em;
@@ -340,16 +307,15 @@ row-gap: 30%;
 #education-wrapper {
   background-color: pink;
   /* width: calc(45% - 3em); */
-  width: 25em;
+  width: 50%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  /* align-items: flex-start; */
   row-gap: 1em;
   border-radius: 1em;
   padding-left: 3em;
-  /* padding: 3em; */
+  padding: 3em;
 }
 .education-header {
   background-color: teal;
@@ -363,16 +329,16 @@ row-gap: 30%;
   border-radius: 0.2em;
 }
 .education-header-1 {
-  margin-top: 1em;
+  /* margin-top: 1em; */
 }
 .education-header-2 {
-  margin-top: 3.2em;
+  /* margin-top: 3.2em; */
 }
 .education-item {
   background-color: yellowgreen;
   /* background: #181b1c; */
   font-size: 16px;
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row-reverse;
@@ -401,6 +367,14 @@ footer {
 /* ---------------------------------------------- */
 /* Media queries */
 /* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+@media (max-width: 400px) {
+  nav {
+    height: 1em;
+  }
+}
+
 /* ---------------------------------------------- */
 
 @media (max-width: 400px) {
@@ -438,18 +412,50 @@ footer {
 /* ---------------------------------------------- */
 
 @media (max-width: 1200px) {
-  #skills-wrapper {
-    flex-wrap: wrap;
-    width: 45em;
-    grid-column-gap: 0.5em;
-    grid-row-gap: 0.5em;
+  .about-me-area h2 {
+    font-size: 2em;
   }
-  #education-wrapper {
-    flex-wrap: wrap;
-    width: 45em;
+  .about-me-area h4 {
+    font-size: 1em;
   }
   .container {
     flex-wrap: wrap;
     flex-direction: column;
+    row-gap: 1em;
+  }
+
+  #skills-wrapper {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: fit-content;
+    /* grid-column-gap: 0.5em; */
+    grid-row-gap: 0.1em;
+  }
+  .item-header {
+    /* grid-area: item-header; */
+  }
+  .item {
+    /* grid-area: item; */
+  }
+  #education-wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    background-color: red;
+    padding: 3em;
+  }
+
+  .education-item {
+    margin: 0.5em;
+    width: auto;
+    font-size: 0.9em;
+    justify-content: center;
+  }
+  .education-item i {
+    display: none;
+  }
+  .education-header {
+    margin: auto;
+    font-size: 1em;
   }
 }
