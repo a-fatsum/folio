@@ -67,7 +67,8 @@ li {
 }
 .hero-area,
 .projects-area,
-.about-me-area {
+.about-me-area,
+.contact-me-area {
   /* background-color: green; */
   width: 100%;
   margin: auto;
@@ -193,7 +194,7 @@ li {
 /* ---------------------------------------------- */
 
 .sub-section {
-  /* height: 100%; */
+  height: 100%;
 }
 
 .about-me-area {
@@ -337,6 +338,12 @@ footer {
   background-color: slateblue;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 /* ---------------------------------------------- */
@@ -345,7 +352,7 @@ footer {
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   nav {
     height: 1em;
   }
@@ -353,7 +360,7 @@ footer {
 
 /* ---------------------------------------------- */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .hero-area {
     /* background-color: lightblue; */
     max-width: 300px;
@@ -376,7 +383,7 @@ footer {
 
 /* ---------------------------------------------- */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .projects-container {
     flex-wrap: wrap;
   }
@@ -387,7 +394,7 @@ footer {
 
 /* ---------------------------------------------- */
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .about-me-area h2 {
     font-size: 2em;
   }
