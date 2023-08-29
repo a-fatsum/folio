@@ -489,7 +489,7 @@ footer {
 
 /* ---------------------------------------------- */
 
-@media (orientation: landscape) {
+@media (max-width: 860px) and (orientation: landscape) {
   footer {
     /* background-color: red; */
   }
