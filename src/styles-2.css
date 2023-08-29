@@ -10,7 +10,7 @@ body {
 }
 nav {
   justify-content: space-between;
-  background-color: #1d3131a5;
+  background-color: #13151acd;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   width: 100%;
@@ -20,25 +20,30 @@ nav {
   flex-direction: row;
   z-index: 20;
   height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  justify-items: flex-end;
+  align-items: center;
 }
 nav img {
   width: 100px;
   height: 10px;
 }
 ul {
+  background-color: white;
   display: flex;
   flex-direction: row;
   column-gap: 70px;
   list-style-type: none;
   width: fit-content;
-  justify-content: space-around;
-  font-size: 18px;
-  margin-right: 5%;
+  /* margin-right: 5%; */
 }
 
 li {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: bold;
 }
 /* main container */
