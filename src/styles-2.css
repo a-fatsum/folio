@@ -92,6 +92,7 @@ li {
 .hero {
   /* background-color: tomato; */
   height: 100%;
+  letter-spacing: 5px;
 }
 .hero-area,
 .projects-area,
@@ -133,7 +134,7 @@ li {
   font-weight: 200;
 }
 #location span {
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid black;
 }
 #location span + span {
   border-bottom: 1px solid yellow;
@@ -195,6 +196,7 @@ li {
   margin-top: 2em;
   font-size: 2em;
   font-weight: 200;
+  letter-spacing: 5px;
 }
 
 .projects-container {
@@ -247,6 +249,7 @@ li {
   margin-top: 3em;
   font-size: 2.5em;
   font-weight: 300;
+  letter-spacing: 5px;
 }
 
 .sub-section h4 {
@@ -417,6 +420,7 @@ footer {
   background-color: rgba(6, 6, 34, 0.174);
   height: 100%;
   width: 100%;
+  letter-spacing: 5px;
 }
 
 /* ---------------------------------------------- */
@@ -663,7 +667,11 @@ footer {
   align-items: center;
   padding-top: 1rem;
   border-bottom: 2px solid rgb(223, 251, 219);
-  background-color: tomato;
+  /*  */
+  background-color: coral;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
 }
 
 /* logo style  */
@@ -689,13 +697,22 @@ footer {
 
 .nav-menu {
   position: fixed;
-  width: 60%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
   top: 6rem;
-  left: 18em;
-  background-color: rgb(148, 29, 29);
+  left: 8em;
+  background-color: coral;
   font-weight: 600;
+  /*  */
+  padding-top: 5em;
   z-index: 999999;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5em;
+  font-size: 1.7em;
+  letter-spacing: 5px;
+  border-radius: 5px;
 }
 .nav-menu a {
   display: block;
