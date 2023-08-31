@@ -2,6 +2,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   height: 100%;
+  background-color: rgb(2, 2, 14);
 }
 
 :root {
@@ -688,10 +689,10 @@ footer {
 
 .nav-menu {
   position: fixed;
-  width: 30%;
+  width: 60%;
   height: 50%;
   top: 6rem;
-  left: 30em;
+  left: 18em;
   background-color: rgb(148, 29, 29);
   font-weight: 600;
   z-index: 999999;
