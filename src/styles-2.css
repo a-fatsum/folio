@@ -5,12 +5,11 @@ body {
 }
 
 :root {
-  /* --background-color: rgba(128, 128, 128, 0.219); */
-  /* --button-color: rgba(10, 71, 71, 0.286); */
 }
-nav {
+/* --------------------------------------------------------------- */
+
+/* nav {
   justify-content: space-between;
-  /* background-color: #13151acd; */
   background-color: rgb(137, 132, 132);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -22,11 +21,6 @@ nav {
   z-index: 20;
   height: 3em;
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  /* align-content: space-between; */
-  /* justify-items: flex-end; */
-  /* align-items: center; */
 }
 nav img {
   width: 100px;
@@ -46,7 +40,38 @@ li {
   text-decoration: none;
   font-size: 1.8em;
   font-weight: 300;
+} */
+/* --------------------------------------------------------------- */
+
+/* nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #171818a5;
+  position: -webkit-sticky;
 }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 70px;
+  list-style-type: none;
+  width: fit-content;
+  justify-content: space-around;
+  font-size: 25px;
+  margin-right: 5%;
+}
+
+li {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+} */
+
+/* --------------------------------------------------------------- */
 /* main container */
 /* Don't display flex to apply height 100% to sections */
 #main-container {
@@ -374,13 +399,13 @@ a {
   color: white;
 }
 
-.hamburger {
+/* .hamburger {
   display: none;
-}
+} */
 
-.hamburger:focus {
+/* .hamburger:focus {
   outline: 0;
-}
+} */
 
 /* ---------------------------------------------- */
 /* Footer */
@@ -489,11 +514,11 @@ footer {
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   nav {
     height: 1em;
   }
-}
+} */
 
 /* ---------------------------------------------- */
 
@@ -555,29 +580,52 @@ footer {
   }
 }
 /*  */
-/*  */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
 
-@media all and (max-width: 1000px) {
+/*  */
+/*  */
+/* Media queries */
+
+/* @media all and (max-width: 1000px) {
   .hamburger {
     display: block;
     border: 0;
     background-color: transparent;
-    /* background-color: tomato; */
     color: white;
-    color: red;
-    font-size: 3.3em;
-    /* margin: 1.5em; */
+    font-size: 30px;
+    margin: 20px;
     align-self: flex-end;
     cursor: pointer;
   }
   ul {
     display: none;
-    /* margin-bottom: 0px; */
-    margin-right: 35em;
-    /* background-color: tomato; */
+    margin-left: 40%;
     width: fit-content;
     text-align: center;
-    /* height: 100vh; */
+    z-index: 9999;
   }
 
   ul.show {
@@ -585,23 +633,150 @@ footer {
     flex-direction: column;
     row-gap: 100px;
     text-align: center;
-    /* margin-top: 0px; */
+    margin-top: 0px;
     position: sticky;
-    margin-left: 5em;
-    /* top: 0; */
-    /* height: 100vh; */
-    /* background-color: purple; */
+    top: 0;
   }
 
   nav {
-    /* display: flex; */
     display: flex;
     position: sticky;
     top: 0;
     flex-direction: column-reverse;
     justify-content: space-around;
     background-color: #171818a5;
-    /* background-color: green; */
+  }
+
+  .logo {
+    display: none;
+  }
+} */
+
+/*  */
+/* ============================================================ */
+/* navbar styling */
+.navbar {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-bottom: 2px solid rgb(223, 251, 219);
+  background-color: tomato;
+}
+
+/* logo style  */
+.logo img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
+
+.hamburger-menu {
+  padding-right: 1.5rem;
+  cursor: pointer;
+}
+
+.hamburger-menu .line {
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 30%;
+  height: 50%;
+  top: 6rem;
+  left: 30em;
+  background-color: rgb(148, 29, 29);
+  font-weight: 600;
+  z-index: 999999;
+}
+.nav-menu a {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+}
+.nav-menu a:hover {
+  background-color: rgb(223, 251, 219);
+}
+
+.hide {
+  display: none;
+}
+
+/* for Desktop view  */
+@media screen and (min-width: 1000px) {
+  .navbar {
+    justify-content: space-around;
+  }
+  .nav-menu {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+  .nav-menu a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .nav-menu a:hover {
+    background-color: rgb(223, 251, 219);
+    border-radius: 5px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+/* --------------------------------------------------------------- */
+
+/* @media all and (max-width: 1000px) {
+  nav {
+    display: block;
+    background-color: red;
+  }
+
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    background-color: tomato;
+    color: white;
+    color: red;
+    font-size: 3.3em;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  ul {
+    display: none;
+    margin-bottom: 0px;
+    margin-right: 5em;
+    width: fit-content;
+    text-align: center;
+  }
+
+  ul.show {
+    display: block;
+    flex-direction: row;
+    row-gap: 10px;
+    text-align: center;
+    position: sticky;
+    margin-left: 5em;
+    top: 0;
+  }
+
+  nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    background-color: #171818a5;
   }
 
   .logo {
@@ -614,4 +789,4 @@ footer {
 
   .fa-bars {
   }
-}
+} */

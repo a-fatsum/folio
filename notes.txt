@@ -39,3 +39,16 @@ This is in my opinion the basic blocks of responsive design. You code your mobil
 You can use percentages too. Like if you have 3 cards that are supposed to be in a row on tablet, set the items to be width:30% and set the max width for it to stop at, for example 350px. So on tablet they would be equal sizes of 30% of its container, and flex box created the space between them. So while the container width grows up to its max width, the elements grow at the same ratio until their max widths are met. That’s True responsive design. When elements are all growing to fit their containers at whatever screen size then a breakpoint hits and they adjust their positions and grow into those new containers.
 
 Hopefully this helps understand how to do it better.
+
+===========+++++++++++++++++++++++++++++++++++++===========
+===========+++++++++++++++++++++++++++++++++++++===========
+===========+++++++++++++++++++++++++++++++++++++===========
+===========+++++++++++++++++++++++++++++++++++++===========
+
+
+
+Nav bar 
+https://www.geeksforgeeks.org/navigation-bar-using-javascript/
+
+
+
