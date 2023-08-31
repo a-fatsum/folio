@@ -10,7 +10,8 @@ body {
 }
 nav {
   justify-content: space-between;
-  background-color: #13151acd;
+  /* background-color: #13151acd; */
+  background-color: rgb(137, 132, 132);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   width: 100%;
@@ -19,32 +20,32 @@ nav {
   align-items: center;
   flex-direction: row;
   z-index: 20;
-  height: 1.5em;
+  height: 3em;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-content: space-between;
-  justify-items: flex-end;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
+  /* justify-items: flex-end; */
+  /* align-items: center; */
 }
 nav img {
   width: 100px;
   height: 10px;
 }
 ul {
-  background-color: white;
+  background-color: olive;
   display: flex;
   flex-direction: row;
-  column-gap: 70px;
+  column-gap: 2em;
   list-style-type: none;
   width: fit-content;
-  /* margin-right: 5%; */
+  margin-right: 5em;
 }
 
 li {
   text-decoration: none;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 1.8em;
+  font-weight: 300;
 }
 /* main container */
 /* Don't display flex to apply height 100% to sections */
@@ -366,6 +367,20 @@ li {
 .education-item i {
   font-size: 2em;
 }
+/*  */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
 
 /* ---------------------------------------------- */
 /* Footer */
@@ -537,5 +552,66 @@ footer {
   }
   .socials {
     margin-top: 1em;
+  }
+}
+/*  */
+/*  */
+
+@media all and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    /* background-color: tomato; */
+    color: white;
+    color: red;
+    font-size: 3.3em;
+    /* margin: 1.5em; */
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  ul {
+    display: none;
+    /* margin-bottom: 0px; */
+    margin-right: 35em;
+    /* background-color: tomato; */
+    width: fit-content;
+    text-align: center;
+    /* height: 100vh; */
+  }
+
+  ul.show {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    text-align: center;
+    /* margin-top: 0px; */
+    position: sticky;
+    margin-left: 5em;
+    /* top: 0; */
+    /* height: 100vh; */
+    /* background-color: purple; */
+  }
+
+  nav {
+    /* display: flex; */
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    background-color: #171818a5;
+    /* background-color: green; */
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .headshot-container {
+    display: none;
+  }
+
+  .fa-bars {
   }
 }
