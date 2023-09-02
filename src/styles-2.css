@@ -666,7 +666,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  border-bottom: 2px solid rgb(223, 251, 219);
+  /* border-bottom: 2px solid rgb(223, 251, 219); */
   /*  */
   background-color: coral;
   width: 100%;
@@ -703,7 +703,6 @@ footer {
   left: 8em;
   background-color: coral;
   font-weight: 600;
-  /*  */
   padding-top: 5em;
   z-index: 999999;
   text-align: center;
@@ -728,7 +727,36 @@ footer {
 }
 
 /* for Desktop view  */
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
+  .navbar {
+  }
+  .nav-menu {
+    display: block;
+    position: relative;
+    width: auto;
+    margin-right: 300px;
+    /* background-color: blue; */
+    padding-top: 0;
+    margin-bottom: 200px;
+    font-size: 1.5em;
+  }
+  .nav-menu a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .nav-menu a:hover {
+    background-color: rgb(200, 165, 50);
+    border-radius: 5px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------- */
+/* for Mobile view  */
+
+/* @media (min-width: 400px) {
   .navbar {
     justify-content: space-around;
   }
@@ -738,6 +766,7 @@ footer {
     width: auto;
     margin-right: 20px;
     background: none;
+    background-color: green;
   }
   .nav-menu a {
     display: inline-block;
@@ -750,7 +779,8 @@ footer {
   .hamburger-menu {
     display: none;
   }
-}
+} */
+
 /* --------------------------------------------------------------- */
 
 /* @media all and (max-width: 1000px) {
