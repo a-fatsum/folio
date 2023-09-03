@@ -756,25 +756,25 @@ footer {
 /* for Mobile view  */
 
 @media (max-width: 400px) {
-  /* .navbar {
-    display: flex;
-    height: 5rem;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
+  .navbar {
+    /* display: flex; */
+    height: 3rem;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding-top: 1rem; */
 
-    background-color: coral;
-    width: 100%;
-    position: fixed;
-    z-index: 999999;
-  } */
+    /* background-color: coral; */
+    /* width: 100%; */
+    /* position: fixed; */
+    /* z-index: 999999; */
+  }
 
   /* logo style  */
-  /* .logo img {
-    width: 4rem;
-    height: 4rem;
+  .logo img {
+    width: 3rem;
+    height: 3rem;
     margin-left: 1rem;
-  } */
+  }
 
   .hamburger-menu {
     padding-right: 1.5rem;
@@ -794,7 +794,7 @@ footer {
     position: fixed;
     width: 70%;
     height: 70%;
-    top: 6rem;
+    top: 4rem;
     left: 5em;
     background-color: coral;
     font-weight: 600;
