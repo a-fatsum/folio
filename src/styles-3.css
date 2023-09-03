@@ -246,7 +246,7 @@ li {
 
 .sub-section h2 {
   /* background-color: darkkhaki; */
-  margin-top: 8em;
+  margin-top: 3em;
   font-size: 2.5em;
   font-weight: 300;
   letter-spacing: 5px;
@@ -441,22 +441,10 @@ footer {
   .sub-section-alternative {
     height: fit-content;
   }
-  .sub-section-alternative h2 {
-    margin-top: 7em;
-  }
 }
 /* ---------------------------------------------- */
 
 @media (max-width: 1100px) {
-  .sub-section-alternative {
-    /* background-color: olive; */
-  }
-  .sub-section-alternative h2 {
-    margin-top: 5em;
-    font-size: 2.4em;
-    font-weight: 300;
-    letter-spacing: 2px;
-  }
   .container {
     /* background-color: lemonchiffon; */
     flex-wrap: wrap;
@@ -467,13 +455,9 @@ footer {
     align-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 0;
   }
   .sub-section {
     height: fit-content;
-  }
-  .sub-section h2 {
-    margin-top: 4em;
   }
   #education-wrapper {
     /* background-color: tomato; */
@@ -483,7 +467,7 @@ footer {
 /* ---------------------------------------------- */
 @media (max-width: 780px) {
   .projects-container {
-    /* background-color: blue; */
+    background-color: blue;
     flex-wrap: wrap;
     flex-direction: column;
     width: 70em;
@@ -529,25 +513,6 @@ footer {
   .education-header {
     margin: auto;
     /* font-size: 1em; */
-  }
-}
-/* ---------------------------------------------- */
-
-@media (max-width: 400px) {
-  #name {
-    /* background-color: aqua; */
-    font-size: 2em;
-    margin-bottom: 51px;
-  }
-
-  .hero-area p {
-    font-size: 2em;
-    margin-bottom: 31px;
-    padding: 25px;
-  }
-
-  #location {
-    margin-bottom: -11px;
   }
 }
 
@@ -610,34 +575,19 @@ footer {
   .hero-area {
   }
   #name {
-    margin-top: 2.2em;
-    font-size: 2em;
+    margin-top: 1.5em;
   }
   .hero-area p {
     margin-top: -0.5em;
-    font-size: 1.5em;
   }
   #location {
     margin-top: -1em;
-    font-size: 1em;
   }
   .button {
     margin-top: 1em;
-    font-size: 1em;
   }
   .socials {
     margin-top: 1em;
-  }
-
-  .projects-area h2 {
-    font-size: 2em;
-    margin-top: 3em;
-    margin-bottom: -2em;
-  }
-
-  .about-me-area h2 {
-    font-size: 2.2em;
-    margin-top: 3em;
   }
 }
 /*  */
@@ -676,6 +626,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
+
   background-color: coral;
   width: 100%;
   position: fixed;
@@ -727,7 +678,7 @@ footer {
   padding: 5px 0;
 }
 .nav-menu a:hover {
-  background-color: rgb(200, 165, 50);
+  background-color: rgb(223, 251, 219);
 }
 
 .hide {
@@ -736,20 +687,18 @@ footer {
 
 /* --------------------------------------------------------------- */
 /* for Desktop view  */
-@media (min-width: 790px) {
+@media (min-width: 1000px) {
   .navbar {
   }
   .nav-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    display: block;
     position: relative;
-    width: 700px;
+    width: auto;
     margin-right: 300px;
     /* background-color: blue; */
     padding-top: 0;
     margin-bottom: 200px;
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .nav-menu a {
     display: inline-block;
@@ -762,24 +711,15 @@ footer {
   .hamburger-menu {
     display: none;
   }
-
-  .logo img {
-    width: 4rem;
-    height: 4rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-  }
 }
 
 /* --------------------------------------------------------------- */
-/* --------------------------------------------------------------- */
-
-@media (max-width: 782px) {
+/* for Mobile view  */
+@media (max-width: 400px) {
   .navbar {
-    height: 2rem;
-    /* background-color: red; */
+    height: 3rem;
   }
+
   /* logo style  */
   .logo img {
     width: 3rem;
@@ -789,7 +729,6 @@ footer {
     border-radius: 5px;
   }
 
-  /* 
   .hamburger-menu {
     padding-right: 1.5rem;
     cursor: pointer;
@@ -803,24 +742,21 @@ footer {
     background-color: black;
     cursor: pointer;
   }
-  */
 
   .nav-menu {
-    /* background-color: olivedrab; */
-    background-color: rgba(255, 127, 80, 0.911);
     position: fixed;
-    width: 90%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     top: 4rem;
-    left: 5%;
+    left: 5em;
+    background-color: coral;
     font-weight: 600;
-    padding-top: 50%;
+    padding-top: 5em;
     z-index: 999999;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 2em;
+    row-gap: 5em;
     font-size: 1.7em;
     letter-spacing: 5px;
     border-radius: 5px;
@@ -831,13 +767,13 @@ footer {
     padding: 5px 0;
     font-size: 0.8em;
   }
+
   .hide {
     display: none;
   }
 }
 
 /* --------------------------------------------------------------- */
-<<<<<<< HEAD
 /* ---------------------------------------------- */
 /* Contact me */
 /* ---------------------------------------------- */
@@ -886,109 +822,4 @@ form button {
   width: 150px;
   margin: 20px auto 0;
   border-radius: 30px;
-=======
-/* for Mobile view  */
-@media (max-width: 400px) {
-  .navbar {
-    height: 2rem;
-    /* background-color: darkgoldenrod; */
-  }
-  /* logo style  */
-  .logo img {
-    width: 2rem;
-    height: 2rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-  }
-  .hamburger-menu {
-    padding-right: 1.5rem;
-    cursor: pointer;
-  }
-  .hamburger-menu .line {
-    display: block;
-    width: 2.5rem;
-    height: 3px;
-    margin-bottom: 10px;
-    background-color: black;
-    cursor: pointer;
-  }
-  .nav-menu {
-    /* background-color: orange; */
-    position: fixed;
-    width: 90%;
-    height: 70%;
-    top: 4rem;
-    left: 1.5rem;
-    font-weight: 600;
-    padding-top: 50%;
-    z-index: 999999;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
-    font-size: 1.7em;
-    letter-spacing: 5px;
-    border-radius: 5px;
-  }
-  .nav-menu a {
-    display: block;
-    text-align: center;
-    padding: 5px 0;
-    font-size: 0.8em;
-  }
-  .hide {
-    display: none;
-  }
-}
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* Landscape view */
-/*  */
-
-@media (max-width: 800px) and (orientation: landscape) {
-  .navbar {
-    height: 2rem;
-    /* background-color: darkgoldenrod; */
-  }
-  /* logo style  */
-  .logo img {
-    width: 2rem;
-    height: 2rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-  }
-  .hamburger-menu {
-    padding-right: 1.5rem;
-    cursor: pointer;
-  }
-  .hamburger-menu .line {
-    display: block;
-    width: 2.5rem;
-    max-height: 3px;
-    margin-bottom: 10px;
-    background-color: black;
-    cursor: pointer;
-  }
-  .nav-menu {
-    /* background-color: orange; */
-    width: fit-content;
-    height: fit-content;
-    top: -15rem;
-    left: 11.5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .nav-menu a {
-    display: block;
-    text-align: center;
-    padding: 8px;
-    font-size: 0.7em;
-  }
-  .hide {
-    display: none;
-  }
->>>>>>> e0729422fa85b4e3457d122655e025a4461d2e48
 }
