@@ -552,6 +552,9 @@ footer {
 /* ---------------------------------------------- */
 
 @media (max-width: 500px) {
+  .sub-section-alternative h2 {
+    margin-top: 5em;
+  }
   .projects-container {
     flex-wrap: wrap;
   }
@@ -561,7 +564,7 @@ footer {
 }
 
 /* ---------------------------------------------- */
-
+/* landscape orientation */
 @media (max-width: 860px) and (orientation: landscape) {
   footer {
     /* background-color: red; */
@@ -610,53 +613,7 @@ footer {
 /* --------------------------------------------------------------- */
 /* --------------------------------------------------------------- */
 
-/*  */
-/*  */
 /* Media queries */
-
-/* @media all and (max-width: 1000px) {
-  .hamburger {
-    display: block;
-    border: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 30px;
-    margin: 20px;
-    align-self: flex-end;
-    cursor: pointer;
-  }
-  ul {
-    display: none;
-    margin-left: 40%;
-    width: fit-content;
-    text-align: center;
-    z-index: 9999;
-  }
-
-  ul.show {
-    display: flex;
-    flex-direction: column;
-    row-gap: 100px;
-    text-align: center;
-    margin-top: 0px;
-    position: sticky;
-    top: 0;
-  }
-
-  nav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    background-color: #171818a5;
-  }
-
-  .logo {
-    display: none;
-  }
-} */
-
 /*  */
 /* ============================================================ */
 /* navbar styling */
@@ -725,6 +682,7 @@ footer {
   display: none;
 }
 
+/* --------------------------------------------------------------- */
 /* for Desktop view  */
 @media (min-width: 1000px) {
   .navbar {
@@ -734,7 +692,7 @@ footer {
     position: relative;
     width: auto;
     margin-right: 300px;
-    background-color: blue;
+    /* background-color: blue; */
     padding-top: 0;
     margin-bottom: 200px;
     font-size: 1.5em;
@@ -754,19 +712,9 @@ footer {
 
 /* --------------------------------------------------------------- */
 /* for Mobile view  */
-
 @media (max-width: 400px) {
   .navbar {
-    /* display: flex; */
     height: 3rem;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* padding-top: 1rem; */
-
-    /* background-color: coral; */
-    /* width: 100%; */
-    /* position: fixed; */
-    /* z-index: 999999; */
   }
 
   /* logo style  */
