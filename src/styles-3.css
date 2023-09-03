@@ -182,7 +182,7 @@ li {
 .sub-section-alternative {
   /* background-color: tomato; */
   /* background-color: rgba(5, 5, 28, 0.174); */
-  background-color: rgba(6, 6, 34, 0.174);
+  background-color: rgba(26, 7, 54, 0.122);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -308,7 +308,7 @@ li {
   justify-items: center;
   align-items: center;
   width: 10em;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 300;
   border-radius: 0.2em;
 
@@ -364,7 +364,7 @@ li {
   align-content: center;
   align-items: center;
   width: 10em;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 300;
   border-radius: 0.2em;
 
@@ -940,7 +940,7 @@ a {
 
 footer {
   /* background-color: slateblue; */
-  background-color: rgba(6, 6, 34, 0.174);
+  background-color: rgba(26, 7, 54, 0.122);
   height: 100%;
   width: 100%;
   letter-spacing: 5px;
