@@ -666,8 +666,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  /* border-bottom: 2px solid rgb(223, 251, 219); */
-  /*  */
+
   background-color: coral;
   width: 100%;
   position: fixed;
@@ -735,7 +734,7 @@ footer {
     position: relative;
     width: auto;
     margin-right: 300px;
-    /* background-color: blue; */
+    background-color: blue;
     padding-top: 0;
     margin-bottom: 200px;
     font-size: 1.5em;
@@ -756,30 +755,69 @@ footer {
 /* --------------------------------------------------------------- */
 /* for Mobile view  */
 
-/* @media (min-width: 400px) {
-  .navbar {
-    justify-content: space-around;
+@media (max-width: 400px) {
+  /* .navbar {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+    background-color: coral;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+  } */
+
+  /* logo style  */
+  /* .logo img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+  } */
+
+  .hamburger-menu {
+    padding-right: 1.5rem;
+    cursor: pointer;
   }
-  .nav-menu {
+
+  .hamburger-menu .line {
     display: block;
-    position: static;
-    width: auto;
-    margin-right: 20px;
-    background: none;
-    background-color: green;
+    width: 2.5rem;
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: black;
+    cursor: pointer;
   }
-  .nav-menu a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-  .nav-menu a:hover {
-    background-color: rgb(223, 251, 219);
+
+  .nav-menu {
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    top: 6rem;
+    left: 8em;
+    background-color: coral;
+    font-weight: 600;
+    padding-top: 5em;
+    z-index: 999999;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5em;
+    font-size: 1.7em;
+    letter-spacing: 5px;
     border-radius: 5px;
   }
-  .hamburger-menu {
+  .nav-menu a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .hide {
     display: none;
   }
-} */
+}
 
 /* --------------------------------------------------------------- */
 
