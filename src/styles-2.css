@@ -795,7 +795,7 @@ footer {
     width: 70%;
     height: 70%;
     top: 6rem;
-    left: 8em;
+    left: 5em;
     background-color: coral;
     font-weight: 600;
     padding-top: 5em;
@@ -812,6 +812,7 @@ footer {
     display: block;
     text-align: center;
     padding: 5px 0;
+    font-size: 0.8em;
   }
 
   .hide {
