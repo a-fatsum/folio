@@ -1,0 +1,51 @@
+body {
+  /* font-family: ; */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#hero_section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_container {
+  margin: auto;
+}
+
+#hero_image_container {
+  background-image: url(/images/heroImage.jpg);
+  height: 500px;
+  width: 400px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 5px rgb(0, 0, 0);
+  border-radius: 40% 60% 40% 55% / 60% 45% 55% 40%;
+
+  transition: border-radius 1s ease-in-out;
+  animation: morph 6s infinite alternate ease-in-out;
+}
+@keyframes morph {
+  0% {
+    border-radius: 30% 60% 30% 55% / 60% 35% 55% 30%;
+  }
+  50% {
+    border-radius: 70% 30% 60% 40% / 40% 60% 30% 70%;
+  }
+  100% {
+    border-radius: 50% 50% 40% 60% / 50% 40% 60% 50%;
+  }
+}
+
+.social_icons {
+  display: flex;
+}
+
+#nav_bar {
+  /*  */
+}
