@@ -58,5 +58,80 @@ body {
   background-image: url(/images/svgIcons/html-5-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+
+.css-icon {
+  background-image: url(/images/svgIcons/css-3-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Javascript-icon {
+  background-image: url(/images/svgIcons/js-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.python-icon {
+  background-image: url(/images/svgIcons/python-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.react-icon {
+  background-image: url(/images/svgIcons/react-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sveltekit-icon {
+  background-image: url(/images/svgIcons/svelte-icon-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tailwind-icon {
+  background-image: url(/images/svgIcons/tailwind-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bootstrap-icon {
+  background-image: url(/images/svgIcons/bootstrap-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.github-icon {
+  background-image: url(/images/svgIcons/github-142-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wordpress-icon {
+  background-image: url(/images/svgIcons/wordpress-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.figma-icon {
+  background-image: url(/images/svgIcons/figma-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* optional Tailwind config for custom scale */
+.active-dot {
+  @apply bg-red-400 scale-150;
 }

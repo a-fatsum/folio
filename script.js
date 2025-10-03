@@ -52,3 +52,80 @@ async function getMelbourneWeather() {
 
 // Call it right away:
 getMelbourneWeather();
+
+//
+const sections = document.querySelectorAll("section");
+const dots = document.querySelectorAll(".dot");
+
+const observerOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5, // 50% of section visible triggers the dot
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const targetDot = document.querySelector(
+      `.dot[data-target='${entry.target.id}']`
+    );
+    if (entry.isIntersecting) {
+      targetDot.classList.add("bg-red-400", "scale-150");
+      targetDot.classList.remove("bg-gray-400", "scale-100");
+    } else {
+      targetDot.classList.remove("bg-red-400", "scale-150");
+      targetDot.classList.add("bg-gray-400", "scale-100");
+    }
+  });
+}, observerOptions);
+
+sections.forEach((section) => observer.observe(section));
+
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    const section = document.getElementById(dot.dataset.target);
+    section.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+//
+(function () {
+  const modal = document.getElementById("project-modal");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDesc = document.getElementById("modal-desc");
+  const modalImage = document.getElementById("modal-image");
+  const modalLive = document.getElementById("modal-live");
+  const modalRepo = document.getElementById("modal-repo");
+  const closeBtn = document.getElementById("modal-close");
+
+  function openModal(btn) {
+    modalTitle.textContent = btn.dataset.title || "Project";
+    modalDesc.textContent = btn.dataset.desc || "";
+    modalImage.src =
+      btn.dataset.image ||
+      "https://via.placeholder.com/800x500.png?text=Preview";
+    modalLive.href = btn.dataset.live || "#";
+    modalRepo.href = btn.dataset.repo || "#";
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll("button[data-title]").forEach((btn) => {
+    btn.addEventListener("click", () => openModal(btn));
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+  });
+})();
