@@ -1,5 +1,5 @@
 body {
-  /* font-family: ; */
+  font-family: "Inter", sans-serif;
 }
 
 .wrapper {
@@ -7,15 +7,15 @@ body {
   flex-direction: column;
 }
 
-#hero_section {
+/* #hero_section {
   height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
-.hero_container {
+/* .hero_container {
   margin: auto;
-}
+} */
 
 #hero_image_container {
   background-image: url(/images/heroImage.jpg);
@@ -48,4 +48,7 @@ body {
 
 #nav_bar {
   /*  */
+}
+
+#weather-widget {
 }
