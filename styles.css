@@ -52,3 +52,11 @@ body {
 
 #weather-widget {
 }
+
+/* Skills icons */
+.html-icon {
+  background-image: url(/images/svgIcons/html-5-svgrepo-com.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

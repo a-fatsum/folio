@@ -2,12 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
 
     <title>Folio</title>
   </head>
@@ -30,7 +37,7 @@
         class="fixed bottom-0 left-0 flex-col gap-5 m-4"
       ></div>
 
-      <section id="hero_section" class="relative">
+      <section id="hero_section" class="relative mt-20 h-[75vh]">
         <!-- Hero Section -->
         <div
           class="hero_container flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16 rounded-lg"
@@ -62,7 +69,7 @@
 
             <!-- Tech Stack -->
             <div
-              class="tech_stack mt-10 flex items-center flex-wrap gap-4 justify-center md:justify-start"
+              class="tech_stack mt-40 flex items-center flex-wrap gap-4 justify-center md:justify-start"
             >
               <div class="text-base font-medium whitespace-nowrap">
                 Tech Stack |
@@ -111,13 +118,114 @@
           <div
             id="hero_image_container"
             class="mt-10 md:mt-0 md:ml-12 w-full md:w-1/2 h-64 bg-gray-200 rounded-lg"
-          >
-            <!-- Add hero image here -->
+          ></div>
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- About Section -->
+      <section id="about" class="py-16 bg-gray-50">
+        <div
+          class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-start gap-10"
+        >
+          <!-- About Text -->
+          <div class="flex-1 text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              About Me
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              in tristique magna. Suspendisse potenti. Curabitur id felis a
+              magna volutpat bibendum in nec nulla. Donec et orci nec mauris
+              iaculis laoreet. Aliquam erat volutpat.
+            </p>
+          </div>
+
+          <!-- Tech Stack Box -->
+          <div class="flex-1 bg-white shadow-md rounded-lg p-6">
+            <h3
+              class="text-xl font-semibold text-gray-800 mb-4 text-center md:text-left"
+            >
+              Tech Stack
+            </h3>
+
+            <!-- Languages -->
+            <div class="mb-6">
+              <h4 class="text-gray-700 font-medium mb-2">Languages</h4>
+              <div class="flex flex-wrap gap-4">
+                <div class="flex justify-center items-center gap-2 border">
+                  <div class="html-icon w-6 h-6 rounded"></div>
+                  <span class="mt-1">HTML</span>
+                </div>
+                <div class="flex CSS-icon items-center gap-2">
+                  <div class="w-6 h-6 rounded"></div>
+                  <span>CSS</span>
+                </div>
+                <div class="flex Javascript-icon items-center gap-2">
+                  <div class="w-6 h-6 rounded"></div>
+                  <span class="mt-1">JavaScript</span>
+                </div>
+                <div class="flex python-icon items-center gap-2">
+                  <div class="w-6 h-6 rounded"></div>
+                  <span class="mt-1">Python</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frameworks & Libraries -->
+            <div class="mb-6">
+              <h4 class="text-gray-700 font-medium mb-2">
+                Frameworks & Libraries
+              </h4>
+              <div class="flex flex-wrap gap-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 react-icon h-6 rounded"></div>
+                  <span class="mt-1">React</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-6 sveltekit-icon h-6 rounded"></div>
+                  <span class="mt-1">SvelteKit</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-6 tailwind-icon h-6 rounded"></div>
+                  <span class="mt-1">TailwindCSS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-6 bootstrap-icon h-6 rounded"></div>
+                  <span class="mt-1">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="mb-6">
+              <h4 class="text-gray-700 font-medium mb-2">Tools</h4>
+              <div class="flex flex-wrap gap-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 github-icon h-6 rounded"></div>
+                  <span class="mt-1">GitHub</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 wordpress-icon rounded"></div>
+                  <span class="mt-1">WordPress</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Design -->
+            <div>
+              <h4 class="text-gray-700 font-medium mb-2">Design</h4>
+              <div class="flex flex-wrap gap-4">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 figma-icon rounded"></div>
+                  <span class="mt-1">Figma</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-
     <!-- Scripts -->
     <script type="module" src="script.js"></script>
   </body>
