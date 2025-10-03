@@ -53,7 +53,7 @@ async function getMelbourneWeather() {
 // Call it right away:
 getMelbourneWeather();
 
-//
+/// ====================================== 3 dots nav
 const sections = document.querySelectorAll("section");
 const dots = document.querySelectorAll(".dot");
 
@@ -87,7 +87,7 @@ dots.forEach((dot) => {
   });
 });
 
-//
+//===================================== Projects Modal
 (function () {
   const modal = document.getElementById("project-modal");
   const modalTitle = document.getElementById("modal-title");
@@ -100,9 +100,7 @@ dots.forEach((dot) => {
   function openModal(btn) {
     modalTitle.textContent = btn.dataset.title || "Project";
     modalDesc.textContent = btn.dataset.desc || "";
-    modalImage.src =
-      btn.dataset.image ||
-      "https://via.placeholder.com/800x500.png?text=Preview";
+    modalImage.src = btn.dataset.image || "Image";
     modalLive.href = btn.dataset.live || "#";
     modalRepo.href = btn.dataset.repo || "#";
     modal.classList.remove("hidden");
@@ -129,3 +127,10 @@ dots.forEach((dot) => {
     if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
   });
 })();
+
+//
+document.querySelectorAll(" video").forEach((video) => {
+  video.pause(); // keep paused initially
+  video.closest(".group").addEventListener("mouseenter", () => video.play());
+  video.closest(".group").addEventListener("mouseleave", () => video.pause());
+});

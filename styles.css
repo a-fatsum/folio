@@ -18,7 +18,7 @@ body {
 } */
 
 #hero_image_container {
-  background-image: url(/images/heroImage.jpg);
+  background-image: url(/assets/images/heroImage.jpg);
   height: 500px;
   width: 400px;
   background-position: top;
