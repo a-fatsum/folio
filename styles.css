@@ -55,77 +55,77 @@ body {
 
 /* Skills icons */
 .html-icon {
-  background-image: url(/images/svgIcons/html-5-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/html-5-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .css-icon {
-  background-image: url(/images/svgIcons/css-3-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/css-3-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
-.Javascript-icon {
-  background-image: url(/images/svgIcons/js-svgrepo-com.svg);
+.javascript-icon {
+  background-image: url(/assets/images/svgIcons/js-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .python-icon {
-  background-image: url(/images/svgIcons/python-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/python-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .react-icon {
-  background-image: url(/images/svgIcons/react-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/react-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .sveltekit-icon {
-  background-image: url(/images/svgIcons/svelte-icon-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/svelte-icon-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .tailwind-icon {
-  background-image: url(/images/svgIcons/tailwind-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/tailwind-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bootstrap-icon {
-  background-image: url(/images/svgIcons/bootstrap-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/bootstrap-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .github-icon {
-  background-image: url(/images/svgIcons/github-142-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/github-142-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .wordpress-icon {
-  background-image: url(/images/svgIcons/wordpress-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/wordpress-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .figma-icon {
-  background-image: url(/images/svgIcons/figma-svgrepo-com.svg);
+  background-image: url(/assets/images/svgIcons/figma-svgrepo-com.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
