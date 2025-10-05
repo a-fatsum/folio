@@ -84,12 +84,12 @@
               class="social_icons mt-12 flex justify-center md:justify-start items-center gap-4"
             >
               <img
-                src="images/svgIcons/linkedin.svg"
+                src="./assets/images/svgIcons/linkedin.svg"
                 alt="LinkedIn profile"
                 class="w-8 h-8 hover:scale-110 transition-transform"
               />
               <img
-                src="images/svgIcons/github.svg"
+                src="./assets/images/svgIcons/github.svg"
                 alt="GitHub profile"
                 class="w-8 h-8 hover:scale-110 transition-transform"
               />
@@ -118,7 +118,7 @@
               <!-- Content (split paragraphs for rhythm) -->
               <div class="text-lg text-gray-700 leading-relaxed space-y-4">
                 <p>
-                  I’m not just a front-end developer — I’m a recipe developer
+                  I’m not just a front-end developer, I’m a recipe developer
                   too, so creativity and iteration show up in both my code and
                   my kitchen.
                 </p>
@@ -139,7 +139,7 @@
                 <p>
                   Outside the keyboard I tinker with pen plotters and CNC
                   builds, and I’m usually flying or repairing RC planes and FPV
-                  drones — projects that keep my hands busy and my curiosity
+                  drones, projects that keep my hands busy and my curiosity
                   sharp.
                 </p>
 
@@ -450,23 +450,37 @@
                 </div>
               </article>
 
-              <!-- Grid of smaller static site cards -->
+              <!-- Grid of smaller Web Apps cards -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <!-- Static Site 1 -->
+                <!-- Web App 1 -->
                 <article
                   class="rounded-2xl overflow-hidden shadow group bg-gray-50"
                 >
-                  <img
-                    src="https://via.placeholder.com/600x400.png?text=Static+1"
-                    alt="Static site 1"
-                    class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  <!-- Video Background -->
+                  <div class="relative w-full h-72 md:h-96 overflow-hidden">
+                    <video
+                      src="./assets/videos/pmt_arrg_app.mp4"
+                      muted
+                      loop
+                      autoplay
+                      playsinline
+                      poster="./assets/images/pmt-arrg-calculator-fallback-img.png"
+                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    ></video>
+                    <!-- Image Fallback (visible until hover) -->
+                    <img
+                      src="./assets/images/pmt-arrg-calculator-fallback-img.png"
+                      alt="Featured Web App"
+                      class="w-full h-72 md:h-96 object-cover absolute inset-0 transition-opacity duration-500 group-hover:opacity-0"
+                    />
+                  </div>
+
                   <div class="p-4">
                     <h5 class="font-semibold text-gray-800">
-                      Small Business Site
+                      Payment Arrangement Calculator
                     </h5>
                     <p class="text-sm text-gray-600 mt-1">
-                      Brochure site with contact forms and map integration.
+                      Financial calculator built for Toyota Finance Australia.
                     </p>
 
                     <div class="mt-3 flex items-center justify-between gap-2">
@@ -477,12 +491,15 @@
                         <span class="text-xs bg-gray-100 px-2 py-1 rounded"
                           >CSS</span
                         >
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded"
+                          >JavaScript</span
+                        >
                       </div>
 
                       <div class="flex gap-2">
                         <button
                           class="text-sm text-gray-700 px-3 py-1 rounded hover:bg-gray-100 transition"
-                          data-title="Small Business Site"
+                          data-title="Payment Arrangement Calculator"
                           data-desc="Brochure site with contact forms and map integration."
                           data-image="https://via.placeholder.com/600x400.png?text=Static+1"
                         >
