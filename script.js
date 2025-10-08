@@ -134,3 +134,13 @@ document.querySelectorAll(" video").forEach((video) => {
   video.closest(".group").addEventListener("mouseenter", () => video.play());
   video.closest(".group").addEventListener("mouseleave", () => video.pause());
 });
+
+//
+const pmtArrgVideoElement = document.getElementById("pmt_arrg_app");
+const onclickWebdesignsWebsiteVideoElement = document.getElementById(
+  "onclick_webdesigns_website"
+);
+
+pmtArrgVideoElement.playbackRate = 1.2; // Adjust the speed here
+onclickWebdesignsWebsiteVideoElement.playbackRate = 1.5;
+onclickWebdesignsWebsiteVideoElement.currentTime = 2;
