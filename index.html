@@ -11,11 +11,6 @@
       rel="stylesheet"
     />
 
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    /> -->
-
     <title>Folio</title>
   </head>
   <body>
@@ -61,7 +56,6 @@
 
       <!-- Hero section -->
       <section id="hero_section" class="relative pt-25 h-screen">
-        <!-- Hero Section -->
         <div
           class="hero_container flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16 rounded-lg"
         >
@@ -96,26 +90,25 @@
             </div>
           </div>
 
-          <!-- Hero Image Placeholder -->
+          <!-- Hero Image -->
           <div
             id="hero_image_container"
             class="mt-10 md:mt-0 md:ml-12 w-full md:w-1/2 h-64 bg-gray-200 rounded-lg"
           ></div>
         </div>
       </section>
-      <!--  -->
+      <!-- ================================================================================================== -->
 
-      <!-- About Section (restyled like Projects) -->
+      <!-- About Section -->
       <section id="about" class="bg-gray-50 min-h-screen flex items-center">
         <div class="max-w-6xl mx-auto px-6 w-full">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-            <!-- Left: Intro + pull-quote + hobby chips -->
+            <!-- Left: My intro - hobby chips -->
             <div class="md:col-span-7">
               <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                 About Me
               </h2>
 
-              <!-- Content (split paragraphs for rhythm) -->
               <div class="text-gray-700 leading-relaxed space-y-4">
                 <p>
                   I’m not just a front-end developer, I’m a recipe developer
@@ -150,11 +143,11 @@
                 </p>
               </div>
 
-              <!-- Pull quote / value -->
+              <!-- Pull quote -->
               <div
                 class="mt-6 inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm px-4 py-3 rounded-xl shadow-sm"
               >
-                <!-- small decorative icon -->
+                <!--Pause icon -->
                 <svg
                   class="w-5 h-5 text-red-400"
                   viewBox="0 0 24 24"
@@ -213,9 +206,7 @@
               <div
                 class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100"
               >
-                <!-- <div class="flex items-start justify-between"> -->
                 <h3 class="text-xl font-semibold text-gray-800">Tech Stack</h3>
-                <!-- </div> -->
 
                 <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <!-- Languages -->
@@ -259,7 +250,7 @@
                     </ul>
                   </div>
 
-                  <!-- Frameworks & Tools -->
+                  <!-- Frameworks -->
                   <div>
                     <h4 class="text-sm font-bold text-gray-800 mb-2">
                       Frameworks
@@ -302,7 +293,7 @@
                 </div>
 
                 <!-- bottom row: tools  -->
-                <!-- <div class="mt-5 border-t pt-4 flex flex-wrap gap-3"> -->
+
                 <div class="mt-5 border-t pt-4">
                   <h4 class="text-sm font-bold text-gray-800 mb-2">Tools</h4>
                   <div class="flex gap-2">
@@ -338,19 +329,9 @@
             </div>
           </div>
         </div>
-
-        <!-- subtle decorative SVG (optional) -->
-        <svg
-          class="hidden md:block absolute right-8 top-8 w-40 h-40 opacity-8 text-gray-200"
-          viewBox="0 0 100 100"
-          aria-hidden
-        >
-          <circle cx="50" cy="50" r="40" fill="currentColor" />
-        </svg>
       </section>
 
       <!-- Projects Section -->
-      <!-- split into Static Websites & Web Apps -->
       <!-- ======================================================================== Web Apps -->
       <section id="projects" class="bg-white py-20">
         <div class="max-w-6xl mx-auto px-6">
@@ -360,20 +341,17 @@
             </h2>
           </div>
 
-          <!-- Two-column split for categories on large screens -->
+          <!-- Two-column split -->
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left column: Web Applications (takes 7 cols on large) -->
+            <!-- Left column: Web Applications -->
             <div class="lg:col-span-7 space-y-6">
               <div class="flex items-center justify-between">
                 <h3 class="text-xl font-semibold text-gray-800">
                   Web Applications
                 </h3>
-                <!-- <div class="text-sm text-gray-500">
-                  Dashboards, tools & hardware UIs
-                </div> -->
               </div>
 
-              <!-- Featured Web App (large) -->
+              <!-- Featured Web App ->> Comptrails.com (large) -->
               <article
                 class="relative overflow-hidden rounded-2xl shadow-lg group"
               >
@@ -382,7 +360,7 @@
                   src="./assets/videos/comptrails_application.mp4"
                   muted
                   loop
-                  class="w-full h-72 md:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
+                  class="w-full h-72 md:h-96 object-cover transition-transform duration-500 group-hover:scale-120"
                 ></video>
 
                 <!-- Image Fallback (visible until hover) -->
@@ -392,20 +370,11 @@
                   class="w-full h-72 md:h-96 object-cover absolute inset-0 transition-opacity duration-500 group-hover:opacity-0"
                 />
 
-                <!-- Overlay gradient -->
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                ></div>
-
-                <!-- Content -->
+                <!-- Contents container -->
                 <div class="absolute left-6 bottom-6 right-6 text-white">
                   <div class="flex items-center justify-between gap-4">
                     <div>
                       <h4 class="text-2xl font-semibold">Comptrails.com</h4>
-                      <!-- <p class="text-sm text-white/80 mt-1 max-w-xl">
-                        Fast, responsive marketing site with accessible <br />
-                        forms and lightweight animations.
-                      </p> -->
 
                       <div class="mt-4 flex flex-wrap gap-2">
                         <span class="text-xs bg-white/20 px-3 py-1 rounded-full"
@@ -489,8 +458,6 @@
                         >
                       </div>
 
-                      <!-- <div> -->
-                      <!-- <div class="flex gap-2"> -->
                       <button
                         class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow hover:scale-105 transform transition"
                         data-title="Analytics Dashboard"
@@ -500,8 +467,6 @@
                       >
                         View project
                       </button>
-                      <!-- </div> -->
-                      <!-- </div> -->
                     </div>
                   </div>
                 </article>
@@ -512,16 +477,6 @@
                 >
                   <!-- Video Background -->
                   <div class="relative w-full h-72 md:h-111 overflow-hidden">
-                    <!-- <video
-                      src="./assets/videos/pmt_arrg_app.mp4"
-                      muted
-                      loop
-                      autoplay
-                      playsinline
-                      id="pmt_arrg_app"
-                      poster="./assets/images/reactApp.png"
-                      class="absolute inset-0 w-full object-top h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    ></video> -->
                     <!-- Image Fallback (visible until hover) -->
                     <img
                       src="./assets/images/reactApp.png"
@@ -530,11 +485,6 @@
                     />
                   </div>
 
-                  <!-- <img
-                    src="https://via.placeholder.com/600x400.png?text=Static+2"
-                    alt="Static site 2"
-                    class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105"
-                  /> -->
                   <div class="p-4">
                     <h5 class="font-semibold text-gray-800">Daily Drive</h5>
                     <p class="text-sm text-gray-600 mt-1">
@@ -579,9 +529,6 @@
                 <h3 class="text-xl font-semibold text-gray-800">
                   Static Websites
                 </h3>
-                <!-- <div class="text-sm text-gray-500">
-                  Landing pages and small brochure sites
-                </div> -->
               </div>
 
               <!-- Featured web site -->
@@ -630,9 +577,6 @@
                         <span class="text-xs bg-white/20 px-3 py-1 rounded-full"
                           >Figma</span
                         >
-                        <!-- <span class="text-xs bg-white/20 px-3 py-1 rounded-full"
-                          >CSS</span
-                        > -->
                       </div>
                     </div>
 
@@ -746,7 +690,7 @@
                   id="modal-title"
                   class="text-lg font-semibold text-gray-800"
                 >
-                  Project Title
+                  Project Title_😄😭😭😄😂😍😍😍
                 </h4>
                 <button
                   id="modal-close"
@@ -787,11 +731,6 @@
               </div>
             </div>
           </div>
-
-          <!-- hint -->
-          <!-- <div class="max-w-6xl mx-auto px-6 mt-8 text-sm text-gray-500">
-            Tip: Hover a card to preview. Click **View** for details.
-          </div> -->
         </div>
       </section>
 
