@@ -88,8 +88,10 @@ dots.forEach((dot) => {
 });
 
 //===================================== Projects Modal
+// modalOverlay is for closing the modal when clicking outside of the modal box
+
 (function () {
-  const modal = document.getElementById("project-modal");
+  const modalOverlay = document.getElementById("modal-overlay");
   const modalTitle = document.getElementById("modal-title");
   const modalDesc = document.getElementById("modal-desc");
   const modalImage = document.getElementById("modal-image");
@@ -100,17 +102,16 @@ dots.forEach((dot) => {
   function openModal(btn) {
     modalTitle.textContent = btn.dataset.title || "Project";
     modalDesc.textContent = btn.dataset.desc || "";
-    modalImage.src = btn.dataset.image || "Image";
+    modalImage.src = btn.dataset.image || "";
     modalLive.href = btn.dataset.live || "#";
     modalRepo.href = btn.dataset.repo || "#";
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
+
+    modalOverlay.classList.remove("hidden");
     document.body.style.overflow = "hidden";
   }
 
   function closeModal() {
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
+    modalOverlay.classList.add("hidden");
     document.body.style.overflow = "";
   }
 
@@ -119,12 +120,17 @@ dots.forEach((dot) => {
   });
 
   closeBtn.addEventListener("click", closeModal);
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
-  });
+
+  modalOverlay.addEventListener("click", closeModal);
+  // Clicking modal content should NOT close, stopPropagation() is necessary here
+  modalOverlay
+    .querySelector(".Modal-box")
+    .addEventListener("click", (e) => e.stopPropagation());
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+    if (e.key === "Escape" && !modalOverlay.classList.contains("hidden")) {
+      closeModal();
+    }
   });
 })();
 
@@ -141,6 +147,6 @@ const onclickWebdesignsWebsiteVideoElement = document.getElementById(
   "onclick_webdesigns_website"
 );
 
-pmtArrgVideoElement.playbackRate = 1.2; // Adjust the speed here
+pmtArrgVideoElement.playbackRate = 1.2; // <---------------------------------------------------- Adjust the speed here
 onclickWebdesignsWebsiteVideoElement.playbackRate = 1.5;
 onclickWebdesignsWebsiteVideoElement.currentTime = 2;

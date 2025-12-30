@@ -135,3 +135,6 @@ body {
 .active-dot {
   @apply bg-red-400 scale-150;
 }
+#modal-desc {
+  white-space: pre-line;
+}
