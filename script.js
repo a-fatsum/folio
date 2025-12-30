@@ -93,6 +93,7 @@ dots.forEach((dot) => {
 (function () {
   const modalOverlay = document.getElementById("modal-overlay");
   const modalTitle = document.getElementById("modal-title");
+
   const modalDesc = document.getElementById("modal-desc");
   const modalImage = document.getElementById("modal-image");
   const modalLive = document.getElementById("modal-live");

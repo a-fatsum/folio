@@ -360,7 +360,7 @@
                   src="./assets/videos/comptrails_application.mp4"
                   muted
                   loop
-                  class="w-full h-72 md:h-96 object-cover transition-transform duration-500 group-hover:scale-120"
+                  class="w-full h-72 md:h-96 object-cover transition-transform duration-500 group-hover:scale-105"
                 ></video>
 
                 <!-- Image Fallback (visible until hover) -->
@@ -370,6 +370,10 @@
                   class="w-full h-72 md:h-96 object-cover absolute inset-0 transition-opacity duration-500 group-hover:opacity-0"
                 />
 
+                <!-- Keep this span to hide the logo on the top-right corner  -->
+                <span
+                  class="absolute h-[40px] w-[90px] top-0 right-0 bg-[radial-gradient(circle,_rgba(19,19,19,1)_25%,_rgba(19,19,19,1)_50%,_rgba(19,19,19,0.49)_100%)]"
+                ></span>
                 <!-- Contents container -->
                 <div class="absolute left-6 bottom-6 right-6 text-white">
                   <div class="flex items-center justify-between gap-4">
@@ -398,9 +402,11 @@
                     <div class="flex gap-2">
                       <button
                         class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow hover:scale-105 transform transition text-sm"
-                        data-title="Brand Landing Page"
-                        data-desc="Application designed to streamline compensation claims payouts for a law firm.
-I designed the UI/UX, ensuring an intuitive platform for multi-user sign-ups, while also implementing complex calculation logic.\n
+                        data-title="Compensation Claims Payout Portal"
+                        data-desc="Application designed to streamline compensation claims payouts for a law firm collaboratively with a team of developers.
+
+I designed the UI/UX, as an intuitive platform for multi-user sign-ups, while also implementing complex calculation logic.
+
 The app was built with SvelteKit, JavaScript, TypeScript, and Tailwind CSS."
                         data-image="./assets/images/comptrails-app-modal-view-image.png"
                         data-live="https://app.comptrials.com/"
@@ -415,7 +421,7 @@ The app was built with SvelteKit, JavaScript, TypeScript, and Tailwind CSS."
 
               <!-- Grid of smaller Web Apps cards -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <!-- Web App 1 Payment Arrangement Calculator -->
+                <!-- Payment Arrangement Calculator App -->
                 <article
                   class="rounded-2xl overflow-hidden shadow group bg-gray-50"
                 >
@@ -441,10 +447,10 @@ The app was built with SvelteKit, JavaScript, TypeScript, and Tailwind CSS."
 
                   <div class="p-4">
                     <h5 class="font-semibold text-gray-800">
-                      Payment Arrangement Calculator
+                      Payment Arrangement Platform
                     </h5>
                     <p class="text-sm text-gray-600 mt-1">
-                      Financial calculator built for Toyota Finance Australia.
+                      Overdue Loan Repayment Plan Arrangement Calculator
                     </p>
 
                     <div class="mt-3 flex items-center justify-between gap-2">
@@ -461,11 +467,16 @@ The app was built with SvelteKit, JavaScript, TypeScript, and Tailwind CSS."
                       </div>
 
                       <button
-                        class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow hover:scale-105 transform transition"
-                        data-title="Analytics Dashboard"
-                        data-desc="Realtime charts, offline caching and exportable reports."
-                        data-image="./assets/images/onclick_website_fallback_imag.png"
-                        data-live="#"
+                        class="bg-white text-gray-800 px-4 py-2 rounded-lg shadow hover:scale-105 transform transition text-sm"
+                        data-title="Financial Calculator"
+                        data-desc="This web application replaced an error-prone Excel workflow at Toyota Finance Australia with a reliable, easy-to-use calculation tool. 
+                        
+                        As my first real-world project, it was a milestone that strengthened my understanding of JavaScript functions, array manipulation, and core logic building using plain JavaScript, HTML, and CSS. 
+                        
+                        I’m especially proud to see the solution still in use today, supporting day-to-day work at a large financial organisation and proving its real business value."
+                        data-image="./assets/images/payment_arrangement_image.JPG"
+                        data-live="https://a-fatsum.github.io/my-pmt-calc/"
+                        data-repo="https://github.com/a-fatsum/my-pmt-calc"
                       >
                         View project
                       </button>
@@ -692,13 +703,15 @@ The app was built with SvelteKit, JavaScript, TypeScript, and Tailwind CSS."
           >
             <!-- Modal box -->
             <div
-              class="relative Modal-box bg-white rounded-xl shadow-2xl max-w-3xl w-full overflow-hidden"
+              class="relative Modal-box bg-white rounded-xl shadow-2xl max-w-3xl w-full overflow-hidden p-4"
             >
-              <div class="flex items-start justify-between p-4 border-b">
+              <div class="flex items-start justify-between pt-2 border-b">
                 <h4
                   id="modal-title"
                   class="text-lg font-semibold text-gray-800"
-                ></h4>
+                >
+                  <!-- Modal title goes here -->
+                </h4>
 
                 <button
                   id="modal-close"
@@ -712,19 +725,21 @@ The app was built with SvelteKit, JavaScript, TypeScript, and Tailwind CSS."
                 <img
                   id="modal-image"
                   src="https://via.placeholder.com/800x500.png?text=Preview"
-                  alt=""
-                  class="w-full h-56 object-cover rounded"
+                  alt="Project Image"
+                  class="w-full h-56 object-cover rounded my-auto hover:scale-105 transform transition text-sm"
                 />
 
-                <div>
-                  <p id="modal-desc" class="text-gray-600"></p>
+                <div class="m-2">
+                  <p id="modal-desc" class="text-gray-600 text-sm">
+                    <!-- Modal describtion goes here -->
+                  </p>
 
                   <div class="mt-4 flex gap-3">
                     <a
                       id="modal-live"
                       href="#"
                       target="_blank"
-                      class="inline-block px-4 py-2 bg-indigo-600 text-white rounded"
+                      class="inline-block px-4 py-2 bg-indigo-600 text-white rounded text-sm"
                     >
                       Live
                     </a>
@@ -733,7 +748,7 @@ The app was built with SvelteKit, JavaScript, TypeScript, and Tailwind CSS."
                       id="modal-repo"
                       href="#"
                       target="_blank"
-                      class="inline-block px-4 py-2 border rounded"
+                      class="inline-block px-4 py-2 border rounded text-sm"
                     >
                       Repo
                     </a>
