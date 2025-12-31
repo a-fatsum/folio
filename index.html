@@ -928,7 +928,8 @@ I designed the UI/UX, as an intuitive platform for multi-user sign-ups, while al
                 <form
                   id="contact-form"
                   class="grid grid-cols-1 gap-4"
-                  novalidate
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
                 >
                   <div class="grid md:grid-cols-2 gap-4">
                     <label class="block">
@@ -1003,20 +1004,13 @@ I designed the UI/UX, as an intuitive platform for multi-user sign-ups, while al
                       </svg>
                       Send message
                     </button>
-
-                    <!-- <button
-                      id="mailto-btn"
-                      type="button"
-                      class="text-sm text-gray-600 underline hover:text-gray-800"
-                    >
-                      Use email instead
-                    </button> -->
                   </div>
 
                   <p id="form-note" class="text-sm text-gray-500 mt-1">
-                    I aim to reply within 48 hours.
+                    I aim to reply within 24 hours.
                   </p>
                 </form>
+                <!--  -->
               </div>
             </div>
           </div>

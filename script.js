@@ -148,6 +148,47 @@ const onclickWebdesignsWebsiteVideoElement = document.getElementById(
   "onclick_webdesigns_website"
 );
 
-pmtArrgVideoElement.playbackRate = 1.2; // <---------------------------------------------------- Adjust the speed here
+pmtArrgVideoElement.playbackRate = 1.2; // <---------------------------------------------------- Adjust the video playback speed
 onclickWebdesignsWebsiteVideoElement.playbackRate = 1.5;
 onclickWebdesignsWebsiteVideoElement.currentTime = 2;
+
+//===================================== Contact Form Submission
+
+// Contact Form KEY
+// a3f1fc77-6dcb-4e9f-861e-69e7c3c88306
+
+const form = document.getElementById("contact-form");
+const submitBtn = form.querySelector('button[type="submit"]');
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  formData.append("access_key", "a3f1fc77-6dcb-4e9f-861e-69e7c3c88306");
+
+  const originalText = submitBtn.textContent;
+
+  submitBtn.textContent = "Sending...";
+  submitBtn.disabled = true;
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert("Success! I will get back to you within 24 hours.");
+      form.reset();
+    } else {
+      alert("Error: " + data.message);
+    }
+  } catch (error) {
+    alert("Something went wrong. Please try again.");
+  } finally {
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  }
+});
