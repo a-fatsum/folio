@@ -69,10 +69,10 @@ const observer = new IntersectionObserver((entries) => {
       `.dot[data-target='${entry.target.id}']`
     );
     if (entry.isIntersecting) {
-      targetDot.classList.add("bg-red-400", "scale-150");
+      targetDot.classList.add("bg-indigo-600", "scale-150");
       targetDot.classList.remove("bg-gray-400", "scale-100");
     } else {
-      targetDot.classList.remove("bg-red-400", "scale-150");
+      targetDot.classList.remove("bg-indigo-600", "scale-150");
       targetDot.classList.add("bg-gray-400", "scale-100");
     }
   });
